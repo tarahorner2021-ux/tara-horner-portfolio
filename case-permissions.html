@@ -22,9 +22,10 @@
       </div>
       <nav aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="index.html#work">Work</a>
-        <a href="index.html#process">How I work</a>
-        <a href="index.html#about">About</a>
+        <a href="case-ai.html">AI homepage</a>
+        <a href="case-pulse.html">Pulse app</a>
+        <a href="case-integrations.html">3rd-party integrations</a>
+        <a href="case-permissions.html" aria-current="page">Advanced user permissions</a>
       </nav>
     </div>
   </header>
@@ -97,7 +98,32 @@
       <div class="section-label">The Opportunity</div>
       <h2>Compose control, don’t configure it</h2>
       <p>The insight that shaped the entire design direction: the people configuring permissions are not the same people who use the product every day. An IT admin setting up roles for a marketing organization needs a different mental model than a campaign manager adjusting their own access.</p>
-      <p>The solution centered on a visible permission matrix, composable roles, and clear onboarding paths so that control felt intentional rather than overwhelming.</p>
+      <p>The design opportunity was to create a permission system that communicated consequence. Not just “check this box to allow Create” but “here is what a Campaign Manager can and cannot do across every area of the product.”</p>
+      <p>The goal became to make enterprise-grade access control feel like a visual configuration tool, not a spreadsheet of toggles.</p>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Design Approach</div>
+      <h2>Four surfaces, one coherent system</h2>
+      <p>User Management + Role Management + Permission Matrix + Brand Settings</p>
+      <div class="cs-layers">
+        <div class="cs-layer">
+          <h4>User management</h4>
+          <p>The home view for administrators: a table of all users, assigned roles, and quick access to edit or remove. Default state is a full user list with role assignment, search, and inline actions, plus empty states for guided onboarding and CSV or SSO import.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Role management</h4>
+          <p>A bird’s-eye view of every role in the organization: who holds it, what it unlocks, and whether it is a standard or custom role. Creating or editing a role opens a side-in panel that keeps the role list visible.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Permission matrix</h4>
+          <p>A structured grid that maps every functional area against four access levels: Read, Create, Update, Delete. The same matrix is used to review a role and to compose a new one.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Brand settings composer</h4>
+          <p>An extension of the same permission framework. Organizations can control who changes the visual identity of the product, answering the enterprise question about white-labeling.</p>
+        </div>
+      </div>
     </div>
 
     <div class="cs-section">
@@ -125,8 +151,8 @@
       <h2>Churn prevented. A new enterprise capability shipped.</h2>
       <p>The at-risk account renewed. The permissions suite shipped within the 12-week window and immediately became a pillar of Acoustic’s enterprise sales story. A feature that hadn’t existed became something sales teams could demo with confidence.</p>
       <div class="stats">
-        <div><div class="stat-num">1</div><div class="stat-label">High-risk enterprise account retained</div></div>
-        <div><div class="stat-num">12wk</div><div class="stat-label">Concept to production</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label">High-risk enterprise accounts retained</div></div>
+        <div><div class="stat-num">14wk</div><div class="stat-label">Concept to production</div></div>
         <div><div class="stat-num">3</div><div class="stat-label">New enterprise wins citing permissions within 6 months</div></div>
         <div><div class="stat-num">40+</div><div class="stat-label">Permission types across 4 functional areas designed and documented</div></div>
       </div>
