@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>  <a class="skip-link" href="#main">Skip to content</a>
-  <a class="skip-link" href="#main">Skip to content</a>
   <header role="banner">
     <div class="header-inner">
       <div class="header-left">
@@ -20,11 +19,11 @@
         <span class="sep" aria-hidden="true">|</span>
         <a href="tel:505-515-9595">505-515-9595</a>
       </div>
-           <nav aria-label="Primary">
+      <nav aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="case-ai.html">AI homepage</a>
         <a href="case-pulse.html">Pulse app</a>
-        <a href="case-integrations.html">3rd-party integrations</a>
+        <a href="case-integrations.html" aria-current="page">3rd-party integrations</a>
         <a href="case-permissions.html">Advanced user permissions</a>
       </nav>
     </div>
@@ -47,45 +46,39 @@
       <div><strong>Platform</strong>Web Application</div>
       <div><strong>Team</strong>1 designer, 2 engineers, 1 PM</div>
     </div>
-    <p class="cs-subtitle">Turning a complex catalog of 40+ connectors into a clear, guided, and reusable experience that reduced support tickets and became a sales asset.</p>
+    <p class="cs-subtitle">Turning a complex catalog of 40+ connectors into a clear, guided, and reusable experience.</p>
   </div>
 
   <div class="cs-body">
     <div class="cs-section">
       <div class="section-label">Overview</div>
-      <p>Acoustic Connect is most powerful when it talks to the tools marketing teams already use: CRMs like Salesforce and SugarCRM, analytics platforms, cloud infrastructure like Snowflake and Azure, and e-commerce platforms like Shopify and Magento.</p>
-      <p>But for most customers, connecting those tools was intimidating. Setup could be complex, and every new integration required starting from scratch.</p>
+      <p>An app marketplace is most powerful when it talks to the tools marketing teams already use. But for most customers, connecting those tools was intimidating. Setup could be complex, and every new integration required starting from scratch.</p>
       <p>Over 10 weeks, I designed the end-to-end integrations experience: from how customers discover connectors to how they configure, manage, and reuse them across their organization.</p>
     </div>
 
-    
     <div class="cs-gallery">
       <div class="cs-gallery-grid three">
-        <div class="cs-gallery-item">
-          <img src="assets/work-int-1.png" alt="App marketplace card system" />
-        </div>
-        <div class="cs-gallery-item">
-          <img src="assets/work-int-2.png" alt="Integration confirmation flow" />
-        </div>
-        <div class="cs-gallery-item">
-          <img src="assets/work-int-3.png" alt="General settings configuration" />
-        </div>
+        <div class="cs-gallery-item"><img src="assets/work-int-1.png" alt="App marketplace card system" /></div>
+        <div class="cs-gallery-item"><img src="assets/work-int-2.png" alt="Integration confirmation flow" /></div>
+        <div class="cs-gallery-item"><img src="assets/work-int-3.png" alt="General settings configuration" /></div>
       </div>
       <p class="cs-gallery-caption">Catalog cards · Guided confirmation · Configuration settings</p>
     </div>
 
-<div class="cs-section">
+    <div class="cs-section">
       <div class="section-label">The Challenge</div>
-      <h2>A catalog that didn’t exist and integration templates waiting to be found</h2>
-      <p>Acoustic Connect wanted to support integrations with 40+ tools across multiple categories. The setup flow needed configuration steps presented with context, error states that pointed to recovery quickly, a repeatable process for teams managing multiple integrations of the same type, and a way for users to tell at a glance which integrations were healthy.</p>
-      <p>We risked driving churn if we couldn’t get connectors up-and-running in a painless manner.</p>
+      <h2>A catalog that didn’t exist and integration templates dying to be found</h2>
+      <p>The challenge? Support 40+ integrations across multiple categories. Start with a catalog of integrations. Make it valuable. Then, we integrate. Keeping in mind the user’s need for information to make them successful, a progress indicator, and all this repeatable, dynamic, and smart.</p>
+      <p>The risk? Driving churn if I couldn’t create a painless experience that provided our users with immense value.</p>
     </div>
 
     <div class="cs-section">
       <div class="section-label">The Opportunity</div>
       <h2>Turn integrations from a technical hurdle into a product strength</h2>
-      <p>The connectors themselves were good. Google Analytics, Salesforce, Snowflake, Shopify. These were the tools Acoustic’s customers were already running their businesses on. A well-designed integration experience could make this tool feel like the natural center of a marketing tech stack rather than one more tool to maintain.</p>
-      <p>The opportunity was to design the catalog and configuration experience around two things customers actually needed: discovery and confidence. Discovery helps customers quickly find the connector for their use case. Confidence gives them the information and guardrails to complete a configuration on their own.</p>
+      <p>The connectors themselves were good. Google Analytics, Salesforce, Snowflake, Shopify. These were the tools our users were already running their businesses on. A well-designed integration experience could make this tool feel like the natural center of a marketing tech stack rather than one more tool to maintain.</p>
+      <p>The opportunity was to design the catalog and configuration experience around two things customers actually needed.</p>
+      <p><strong>Discovery</strong> helps customers quickly find the connector for their use case, understand what it does, and know exactly what they needed to be confident.</p>
+      <p><strong>Confidence</strong> gives customers the information and guardrails to complete a configuration successfully on their own, without support intervention.</p>
     </div>
 
     <div class="cs-section">
@@ -95,15 +88,15 @@
       <div class="cs-layers">
         <div class="cs-layer">
           <h4>Discover</h4>
-          <p>The catalog uses brand recognition so customers can quickly locate the integration they need. Each connector card surfaces category, primary use case, a plain-language description, how much setup work is ahead, and whether it is Acoustic-managed or self-managed.</p>
+          <p>The catalog uses brand recognition as a way to quickly locate the integration users are looking for. Each connector card surfaces the information customers need before they start: category and primary use case, a plain-language description of what it does, how much setup work is ahead of them, and whether it’s Acoustic-managed or self-managed.</p>
         </div>
         <div class="cs-layer">
           <h4>Configure</h4>
-          <p>Setup is a guided, step-by-step flow with progress visibility, inline validation, and integration-specific help. Contextual help changes based on the connector. Configuring Salesforce CRM does not look like configuring a Snowflake data warehouse.</p>
+          <p>The configuration experience was built as a guided, step-by-step flow with progress visibility, inline validation, and integration-specific help. Contextual help on each step includes guidance specific to the integration type.</p>
         </div>
         <div class="cs-layer">
           <h4>Manage</h4>
-          <p>Templates let teams reuse a completed configuration. Connection health is visible in the catalog so customers can see status of every integration without opening each one.</p>
+          <p>Templates let customers save a completed configuration as a named template and apply it to future integrations of the same type. Connection health at a glance shows the status of every integration: connected, needs attention, or error.</p>
         </div>
       </div>
     </div>
@@ -111,44 +104,67 @@
     <div class="cs-section">
       <div class="section-label">Key UX Principles</div>
       <h2>Solutions</h2>
+      <p>From friction point to product differentiator</p>
       <div class="principles">
-        <div class="principle"><h4>Brand-first catalog</h4><p>Customers find what they need easily. Recognizable logos and clear categories dramatically improved discovery time for non-technical buyers.</p></div>
-        <div class="principle"><h4>Guided configuration</h4><p>Inline validation, progress indication, and integration-specific help. no pointless errors. Making implementation a week’s worth of work versus a month.</p></div>
+        <div class="principle"><h4>Catalog design</h4><p>40+ integrations organized so customers can find the right connector quickly.</p></div>
+        <div class="principle"><h4>Guided setup</h4><p>Step-by-step configuration with progress visibility, inline validation, and integration-specific help. No pointless errors.</p></div>
+        <div class="principle"><h4>Template system</h4><p>Save and reuse any configuration. Making implementation a week’s worth of work versus a month.</p></div>
         <div class="principle"><h4>Health at a glance</h4><p>Connection status visible in the catalog view. Customers know immediately which integrations need attention without opening each one.</p></div>
         <div class="principle"><h4>Right expectations early</h4><p>Acoustic-managed vs. self-managed labels on every card tell customers how much work is ahead before they start.</p></div>
-        <div class="principle"><h4>Reusable templates</h4><p>Teams managing multiple integrations of the same type get a proven, repeatable process instead of starting from scratch every time.</p></div>
+        <div class="principle"><h4>Setup for success</h4><p>Before you begin page to make sure the user has what they need to successfully complete the integration.</p></div>
       </div>
     </div>
 
     <div class="cs-section">
       <div class="section-label">Outcome</div>
       <div class="outcome-box">
-        This experience turns Acoustic’s integration catalog from a source of support tickets into a demonstration of how well-connected the platform is.<br><br>
-        <strong>Instead of:</strong> Alphabetical list → no context → complex setup → support ticket<br>
-        <strong>Desired experience:</strong> Category browse → clear card → guided setup → connected and running
+        This experience turns an integration catalog from a source of support tickets into a demonstration of how well-connected the platform is.<br><br>
+        <strong>Instead of:</strong> Sea of tiles → no context → complex setup → support ticket<br>
+        <strong>Intended experience:</strong> Clear card → guided setup → connected and running
       </div>
     </div>
 
     <div class="cs-section">
       <div class="section-label">Project Impact</div>
       <h2>Integration-related churn avoided and a catalog that sells</h2>
-      <p>The most important measure of this project wasn’t a design metric. it was a support ticket metric. Integration-related tickets were a leading indicator of customers who were about to churn. Reducing them meant keeping customers.</p>
+      <p>The integrations page became a featured section in sales demos. A well-designed catalog of 40+ recognizable connectors turns out to be a compelling argument for platform breadth.</p>
+      <p>The design pieces that moved the numbers most:</p>
+      <ul>
+        <li>Brand-first catalog organization</li>
+        <li>Setting the right expectations up front</li>
+        <li>Inline validation in the configuration flow</li>
+        <li>The template system</li>
+      </ul>
       <div class="stats">
         <div><div class="stat-num">40→85%</div><div class="stat-label">Discovery task completion rate, before and after</div></div>
         <div><div class="stat-num">100%</div><div class="stat-label">Template adoption among teams with 3+ integrations</div></div>
         <div><div class="stat-num">40+</div><div class="stat-label">Active connectors</div></div>
       </div>
-      <p>The integrations page also became a featured section in sales demos. A well-designed catalog of 40+ recognizable connectors turns out to be a compelling argument for platform breadth.</p>
     </div>
 
-    <div class="cs-section">
-      <div class="section-label">Reflection</div>
-      <div class="reflection">
-        This project taught me something important about where design adds the most value in technically complex products. Making experiences accessible. Given the right information, context, and helpers, users find success and we build trust.<br><br>
-        The problem was entirely experiential and entirely solvable through design. The biggest impact came from simplicity and predictability.
-      </div>
+    <a href="case-permissions.html">Advanced user permissions</a>
+      </nav>
     </div>
+  </header>
 
+  <main id="main">
+  <div class="cs-hero-image cs-hero-overlay">
+    <img src="assets/hero-integrations.png" alt="3rd-party integrations" />
+    <div class="cs-title-block">
+      <div class="card-meta">UX Design · Product Design · 2023</div>
+      <h1 class="cs-title">3rd-party integrations</h1>
+    </div>
+  </div>
+
+
+  <div class="cs-hero">
+    <div class="cs-meta-row">
+      <div><strong>Role</strong>UX Designer</div>
+      <div><strong>Timeline</strong>10 Weeks</div>
+      <div><strong>Platform</strong>Web Application</div>
+      <div><strong>Team</strong>1 designer, 2 engineers, 1 PM</div>
+    </div>
+    
     <a href="case-permissions.html" class="next-project" aria-label="Next project: Advanced user permissions and brand settings">
       <div>
         <span class="next-label">Next project</span>
