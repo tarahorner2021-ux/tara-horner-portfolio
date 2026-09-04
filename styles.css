@@ -392,3 +392,13 @@ nav a[aria-current="page"] {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+
+.cs-hero { background: #f3ede2; border-bottom: 1px solid rgba(53,46,38,0.1); padding: 24px 0; }
+.cs-hero .cs-meta-row { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+.cs-title { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(32px,4.5vw,60px); line-height: 1.15; margin-bottom: 12px; }
+.cs-subtitle { display: none; }
+.cs-body { max-width: 896px; margin: 0 auto; padding: 112px 40px 100px; }
+.cs-section { margin-bottom: 0; padding: 80px 0 0; border-top: 1px solid rgba(53,46,38,0.1); }
+.cs-section:first-child { border-top: none; padding-top: 0; }
+.cs-section h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 30px; margin: 32px 0 32px; line-height: 1.375; }
