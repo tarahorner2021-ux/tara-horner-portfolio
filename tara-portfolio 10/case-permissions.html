@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced user permissions &amp; brand settings · Tara Horner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header role="banner">
+    <div class="header-inner">
+      <div class="header-left">
+        <strong>Tara Horner</strong>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="mailto:tarahorner2021@gmail.com">tarahorner2021@gmail.com</a>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="tel:505-515-9595">505-515-9595</a>
+      </div>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="case-ai.html">AI homepage</a>
+        <a href="case-pulse.html">Pulse app</a>
+        <a href="case-integrations.html">3rd-party integrations</a>
+        <a href="case-permissions.html" aria-current="page">Advanced user permissions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <div class="cs-hero-image cs-hero-overlay">
+    <img src="assets/hero-permissions.png" alt="Advanced user permissions &amp; brand settings" />
+    <div class="cs-title-block">
+      <div class="card-meta">UX/UI · Enterprise Design · 2023</div>
+      <h1 class="cs-title">Advanced user permissions &amp; brand settings</h1>
+    </div>
+  </div>
+
+
+  <div class="cs-hero">
+    <div class="cs-meta-row">
+      <div><strong>Role</strong>UX/UI Designer</div>
+      <div><strong>Timeline</strong>12 Weeks</div>
+      <div><strong>Platform</strong>Web Application</div>
+      <div><strong>Team</strong>1 designer, 3 engineers, 1 PM</div>
+    </div>
+    <p class="cs-subtitle">A complete administration suite that turned a high-risk churn threat into one of the product’s strongest enterprise capabilities.</p>
+  </div>
+
+  <div class="cs-body">
+    <div class="cs-section">
+      <div class="section-label">Overview</div>
+      <p>A major enterprise customer was at risk of churning because Acoustic Connect lacked the user permission and brand customization controls their admins and marketers needed. I had 12 weeks to design a complete administration suite. or lose the account.</p>
+      <p>The result was a full redesign of the user management experience: a role-based permission matrix across four functional areas (Marketing & campaigns, Content & assets, Administration, Analytics & Reporting), a guided role creation and editing flow, three onboarding paths for bringing teams in, and a brand settings composer scoped to role-based access.</p>
+      <p>What started as a retention problem became one of the product’s most capable enterprise features.</p>
+    </div>
+
+    
+    <div class="cs-gallery">
+      <div class="cs-gallery-full">
+        <img src="assets/work-perm-2.png" alt="Create new role with permission matrix" />
+      </div>
+      <p class="cs-gallery-caption">Role composer with live permission matrix</p>
+      <div class="cs-gallery-grid">
+        <div class="cs-gallery-item">
+          <img src="assets/work-perm-1.png" alt="User management table" />
+        </div>
+        <div class="cs-gallery-item">
+          <img src="assets/work-perm-3.png" alt="Permission matrix detail" />
+        </div>
+      </div>
+      <p class="cs-gallery-caption">User management · Full permission matrix</p>
+      <div class="cs-gallery-full" style="margin-top: 24px;">
+        <img src="assets/work-perm-4.png" alt="Brand settings composer" />
+      </div>
+      <p class="cs-gallery-caption">Brand settings composer. colors, typography, logo governed by the same role system</p>
+    </div>
+
+<div class="cs-section">
+      <div class="section-label">The Challenge</div>
+      <h2>Enterprise-grade control that didn’t exist yet. with a deadline that wasn’t moving</h2>
+      <p>Enterprise customers operate under strict access control requirements. Teams need to define exactly who can read, create, update, or delete within each area of the product. and they need audit trails when something changes.</p>
+      <p>Acoustic Connect had basic user management: you could add users and assign broad roles. What it didn’t have was the granular, matrix-based permission system an enterprise security team would accept. When the at-risk account flagged this as a deal-breaker, the design work landed on my desk.</p>
+      <p>A well-designed permission system has to:</p>
+      <ul>
+        <li>Be comprehensive enough to satisfy a security admin with strict compliance requirements</li>
+        <li>Be legible enough for an IT generalist who doesn’t use the product daily</li>
+        <li>Show the downstream consequences of any permission change before it’s applied</li>
+        <li>Scale to an organization with dozens of users across multiple roles</li>
+        <li>Include a path for bulk user import. a hard requirement for any enterprise rollout</li>
+      </ul>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">The Opportunity</div>
+      <h2>Compose control, don’t configure it</h2>
+      <p>The insight that shaped the entire design direction: the people configuring permissions are not the same people who use the product every day. An IT admin setting up roles for a marketing organization needs a different mental model than a campaign manager adjusting their own access.</p>
+      <p>The design opportunity was to create a permission system that communicated consequence. Not just “check this box to allow Create” but “here is what a Campaign Manager can and cannot do across every area of the product.”</p>
+      <p>The goal became to make enterprise-grade access control feel like a visual configuration tool, not a spreadsheet of toggles.</p>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Design Approach</div>
+      <h2>Four surfaces, one coherent system</h2>
+      <p>User Management + Role Management + Permission Matrix + Brand Settings</p>
+      <div class="cs-layers">
+        <div class="cs-layer">
+          <h4>User management</h4>
+          <p>The home view for administrators: a table of all users, assigned roles, and quick access to edit or remove. Default state is a full user list with role assignment, search, and inline actions, plus empty states for guided onboarding and CSV or SSO import.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Role management</h4>
+          <p>A bird’s-eye view of every role in the organization: who holds it, what it unlocks, and whether it is a standard or custom role. Creating or editing a role opens a side-in panel that keeps the role list visible.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Permission matrix</h4>
+          <p>A structured grid that maps every functional area against four access levels: Read, Create, Update, Delete. The same matrix is used to review a role and to compose a new one.</p>
+        </div>
+        <div class="cs-layer">
+          <h4>Brand settings composer</h4>
+          <p>An extension of the same permission framework. Organizations can control who changes the visual identity of the product, answering the enterprise question about white-labeling.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Key Solutions</div>
+      <div class="principles">
+        <div class="principle"><h4>Permission matrix</h4><p>Enterprise security teams could evaluate a role’s full access footprint without digging through individual settings. Visibility at a glance was the core mental model.</p></div>
+        <div class="principle"><h4>Composable roles</h4><p>Reduced the number of custom roles organizations needed to create and maintain by letting admins build from clear functional areas.</p></div>
+        <div class="principle"><h4>Brand settings composer</h4><p>Brand token control. colors, typography, logo. scoped to roles. Admins can lock brand settings to specific roles, enabling white-label environments for client-facing teams.</p></div>
+        <div class="principle"><h4>Three onboarding paths</h4><p>Add manually, import from CSV, or sync from SSO. The empty state guides administrators to the right path for their organization size and IT setup.</p></div>
+      </div>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Outcome</div>
+      <div class="outcome-box">
+        The Advanced Permissions suite turned a retention risk into a new enterprise capability. and a featured part of the sales narrative.<br><br>
+        <strong>Instead of:</strong> Basic user roles → no permission granularity → enterprise requirement unmet → churn risk<br>
+        <strong>Desired experience:</strong> Role composer → permission matrix → brand control → enterprise requirement met → account renewed
+      </div>
+      <p>Within six months of launch, three additional enterprise customers cited advanced permissions as a key reason for choosing Acoustic over competitors.</p>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Project Impact</div>
+      <h2>Churn prevented. A new enterprise capability shipped.</h2>
+      <p>The at-risk account renewed. The permissions suite shipped within the 12-week window and immediately became a pillar of Acoustic’s enterprise sales story. A feature that hadn’t existed became something sales teams could demo with confidence.</p>
+      <div class="stats">
+        <div><div class="stat-num">4</div><div class="stat-label">High-risk enterprise accounts retained</div></div>
+        <div><div class="stat-num">14wk</div><div class="stat-label">Concept to production</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">New enterprise wins citing permissions within 6 months</div></div>
+        <div><div class="stat-num">40+</div><div class="stat-label">Permission types across 4 functional areas designed and documented</div></div>
+      </div>
+    </div>
+
+    <div class="cs-section">
+      <div class="section-label">Reflection</div>
+      <div class="reflection">
+        Designing under genuine business pressure taught me something about the relationship between constraints and creativity. When the stakes are high and the timeline is fixed, the quality of your early decisions matters more than anything else.<br><br>
+        The permission matrix concept. making the full access footprint of a role visible at a glance. was a decision made on day two. It shaped every screen that followed. Getting the mental model right early is worth more than any amount of polish added late.
+      </div>
+    </div>
+
+    <a href="case-ai.html" class="next-project" aria-label="Next project: Acoustic AI homepage">
+      <div>
+        <span class="next-label">Next project</span>
+        <strong>Acoustic AI Homepage</strong>
+      </div>
+      <span class="next-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  </main>
+
+  <footer>© 2026 Tara Horner · Working prototype</footer>
+</body>
+</html>
