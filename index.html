@@ -1,145 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tara Horner · UX Designer & Writer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tara Horner — UX Designer &amp; Writer</title>
+<meta name="description" content="Tara Horner is a UX designer and writer with a background in teaching, bringing clarity to complex products through design and language." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#home">Skip to content</a>
-  <header role="banner">
-    <div class="header-inner">
-      <div class="header-left">
-        <strong>Tara Horner</strong>
-        <span class="sep" aria-hidden="true">|</span>
-        <a href="mailto:tarahorner2021@gmail.com">tarahorner2021@gmail.com</a>
-        <span class="sep" aria-hidden="true">|</span>
-        <a href="tel:505-515-9595">505-515-9595</a>
-      </div>
-      <nav aria-label="Primary">
-                <a href="index.html">Home</a>
-        <a href="#work">Case studies</a>
-        <a href="#about">About</a>
-        <a href="#process">How I work</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <h1>Products that<br><em>actually</em><br>make sense.</h1>
-        <p>UX designer and writer with a background in teaching. I bring clarity to complex products through design and language.</p>
-        <a href="#work" class="btn">
-          View case studies
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV ===== -->
+<header class="nav-wrap">
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-brand">
+      <span class="nav-brand-name">Tara Horner</span>
+      <span class="nav-brand-sep">|</span>
+      <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#top" class="nav-link is-active" data-nav>Home</a></li>
+      <li><a href="#work" class="nav-link" data-nav>Case studies</a></li>
+      <li><a href="#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="#process" class="nav-link" data-nav>How I work</a></li>
+      <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          Products that <em>actually</em><br />make sense.
+        </h1>
+        <p class="hero-sub">
+          UX designer and writer with a background in teaching. I bring clarity to complex products through design and language.
+        </p>
+        <a href="#work" class="btn btn-primary btn-magnetic" data-magnetic>
+          <span>View case studies</span>
+          <svg class="btn-icon" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.9 11.1 11.1 2.9M11.1 2.9H4.5M11.1 2.9v6.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
-      <div class="hero-photo">
-        <img src="assets/tara-photo.png" alt="Portrait of Tara Horner, UX designer" />
+
+      <div class="hero-collage" aria-hidden="true" id="heroCollage">
+        <div class="collage-item ci-1" data-depth="0.6"><img src="assets/collage-1.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-2" data-depth="0.3"><img src="assets/collage-2.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-3" data-depth="0.9"><img src="assets/collage-3.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-4" data-depth="0.45"><img src="assets/collage-4.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-5" data-depth="0.7"><img src="assets/collage-5.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-6" data-depth="0.35"><img src="assets/collage-6.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-7" data-depth="0.55"><img src="assets/collage-7.png" alt="" loading="lazy" /></div>
+        <div class="collage-item ci-8" data-depth="0.5"><img src="assets/collage-8.png" alt="" loading="lazy" /></div>
       </div>
     </div>
-    <div class="tags-bar">
-      <div class="tags-inner">
-        <div class="tag-item"><strong>UX Design</strong><span>/ Core practice</span></div>
-        <div class="tag-item"><strong>UX Writing</strong><span>/ Interface language</span></div>
-        <div class="tag-item"><strong>Teaching</strong><span>/ Where it started</span></div>
+
+    <div class="stat-bar">
+      <div class="stat-bar-inner">
+        <div class="stat">
+          <p class="stat-title">UX Design</p>
+          <p class="stat-meta">/ Core practice</p>
+        </div>
+        <div class="stat">
+          <p class="stat-title">UX Writing</p>
+          <p class="stat-meta">/ Interface language</p>
+        </div>
+        <div class="stat">
+          <p class="stat-title">Teaching</p>
+          <p class="stat-meta">/ Where it started</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="work">
-    <div class="section-inner">
-      <div class="section-header">
-        <h2>Case studies</h2>
-        <span class="year">2021 to 2026</span>
-      </div>
+  <!-- ===== CASE STUDIES / WORK ===== -->
+  <section class="work" id="work">
+    <div class="container">
+      <h2 class="section-title reveal">Case studies</h2>
 
-      <a href="case-ai.html" class="featured-card">
-        <div class="featured-left">
-          <div>
-            <div class="card-meta">UX/UI · Product Strategy · 2026</div>
-            <h3 class="card-title">AI homepage</h3>
-            <p class="card-desc">Jumped in shortly after conception, took baseline requirements, and turned it into a full-blown feature in 30 days. A massive collaborative effort that crossed the finish line as a differentiator and success.</p>
-            <div class="card-tags">
-              <span class="pill">UX/UI</span>
-              <span class="pill">Product strategy</span>
-              <span class="pill">Interaction design</span>
-            </div>
-          </div>
-          <span class="link-arrow">View case study <span>↗</span></span>
+      <a href="case-study-homepage-revamp.html" class="feature-card reveal">
+        <div class="feature-copy">
+          <h3 class="feature-title">Homepage<br /><em>revamp</em></h3>
+          <p class="feature-desc">
+            Jumped in shortly after conception, took baseline requirements, and turned it into a full-blown feature in 30 days. A massive collaborative effort that crossed the finish line as a differentiator and success.
+          </p>
+          <span class="btn btn-outline">
+            <span>View case study</span>
+            <svg class="btn-icon" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.9 11.1 11.1 2.9M11.1 2.9H4.5M11.1 2.9v6.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
         </div>
-        <div class="featured-right">
-          <img src="assets/ai-card.png" alt="AI homepage interface" />
+        <div class="feature-media feature-media-loop" id="featureLoop">
+          <img src="assets/case-featured-1.jpg" alt="Homepage revamp preview — step 1" class="loop-frame is-active" loading="lazy" />
+          <img src="assets/case-featured-2.jpg" alt="Homepage revamp preview — step 2" class="loop-frame" loading="lazy" />
+          <img src="assets/case-featured-3.jpg" alt="Homepage revamp preview — step 3" class="loop-frame" loading="lazy" />
         </div>
       </a>
 
-      <div class="cards-grid">
-        <a href="case-pulse.html" class="case-card">
-          <div class="case-card-img">
-            <img src="assets/hero-pulse.png" alt="Pulse mobile app screens" />
-          </div>
-          <div class="case-card-body">
-            <h3>Pulse mobile app</h3>
-            <p>From AI audit to production. A vision brought to life as the first ever Acoustic Mobile App, combining cutting-edge audio technology with an intuitive, consumer-grade mobile experience.</p>
-            <div class="card-tags">
-              <span class="pill">UX design</span>
-              <span class="pill">App design</span>
-              <span class="pill">In-app AI</span>
-            </div>
-            <span class="link-arrow">View case study <span>↗</span></span>
-          </div>
+      <div class="thumb-grid reveal">
+        <a href="case-study-pulse.html" class="thumb-card">
+          <img src="assets/case-1.jpg" alt="Pulse mobile app case study" loading="lazy" />
+          <span class="thumb-tease">The five-second gut check</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">Pulse mobile app</span></span>
         </a>
-        <a href="case-integrations.html" class="case-card">
-          <div class="case-card-img">
-            <img src="assets/hero-integrations.png" alt="Microsoft Dynamics 365 integration setup" />
-          </div>
-          <div class="case-card-body">
-            <h3>3rd-party integrations</h3>
-            <p>End-to-end capability. Complete with proven, repeatable templates for faster implementation, turning complex integrations into a differentiating feature rather than a technical burden.</p>
-            <div class="card-tags">
-              <span class="pill">UX design</span>
-              <span class="pill">Differentiator</span>
-              <span class="pill">Templates</span>
-            </div>
-            <span class="link-arrow">View case study <span>↗</span></span>
-          </div>
+        <a href="case-study-3rd-party-integrations.html" class="thumb-card">
+          <img src="assets/case-2.jpg" alt="3rd-party integrations case study" loading="lazy" />
+          <span class="thumb-tease">One pattern, endless uses</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">3rd-party integrations</span></span>
         </a>
-        <a href="case-permissions.html" class="case-card">
-          <div class="case-card-img">
-            <img src="assets/hero-permissions.png" alt="Administration and user management" />
-          </div>
-          <div class="case-card-body">
-            <h3>Advanced user permissions & brand settings</h3>
-            <p>Conceptualized and built out an entire advanced user permission and brand settings suite, complete with a composer, saving high-risk churn and turning admin complexity into a competitive advantage.</p>
-            <div class="card-tags">
-              <span class="pill">UX/UI</span>
-              <span class="pill">Robust</span>
-              <span class="pill">High-risk churn saved</span>
-            </div>
-            <span class="link-arrow">View case study <span>↗</span></span>
-          </div>
+        <a href="case-study-user-permissions.html" class="thumb-card">
+          <img src="assets/case-3-admin-roles.jpg" alt="Advanced user permissions & brand settings case study" loading="lazy" />
+          <span class="thumb-tease">Who? What? When?</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">Advanced user permissions</span></span>
+        </a>
+      </div>
+
+      <div class="thumb-grid reveal">
+        <a href="case-study-leather.html" class="thumb-card">
+          <img src="assets/case-4.jpg" alt="Luke Pope Leather case study" loading="lazy" />
+          <span class="thumb-tease">Built to be used, not just seen</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">Luke Pope Leather</span></span>
+        </a>
+        <a href="case-study-ai.html" class="thumb-card">
+          <img src="assets/ai-logo-card.jpg" alt="Visuals to complete stories case study" loading="lazy" />
+          <span class="thumb-tease">Animation station</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">Visuals to complete stories</span></span>
+        </a>
+        <a href="case-study-usage-dashboards.html" class="thumb-card">
+          <img src="assets/cs7-thumb.jpg" alt="AI usage dashboards case study" loading="lazy" />
+          <span class="thumb-tease">Avoid the splat</span>
+          <span class="thumb-overlay"><span class="thumb-overlay-btn">AI usage dashboards</span></span>
         </a>
       </div>
     </div>
   </section>
 
+  <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
-    <div class="about-inner">
-      <div class="about-content">
-        <div class="about-label">About</div>
-        <h2>Clarity in design<br>starts with <em>the right words.</em></h2>
-        <p>I'm a UX designer and writer who spent years in the classroom before moving into product. Teaching gave me a deep instinct for how people process information: what confuses them, what builds confidence, and what makes something finally click.</p>
-        <p>I bring that same thinking to digital products. Whether I'm mapping flows, writing interface copy, or iterating, I'm always asking: does this make sense to the person on the other side of the screen?</p>
-        <p>I work across the full design process: conception, interaction design, content strategy, and UX writing. often in the same project. That combination lets me close the gap between how a product is designed and how it speaks.</p>
-        <div class="skills">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title about-title">Clarity in design<br />starts with <em>the right words.</em></h2>
+
+        <p class="about-p">I'm a UX designer and writer who spent years in the classroom before moving into product. Teaching gave me a deep instinct for how people process information — what confuses them, what builds confidence, and what makes something finally click.</p>
+        <p class="about-p">I bring that same thinking to digital products. Whether I'm mapping flows, writing interface copy, or iterating, I'm always asking: does this make sense to the person on the other side of the screen?</p>
+        <p class="about-p">I work across the full design process — conception, interaction design, content strategy, and UX writing — often in the same project. That combination lets me close the gap between how a product is designed and how it speaks.</p>
+
+        <div class="skill-cols">
           <div class="skill-col">
-            <h4>UX Design</h4>
-            <ul>
+            <p class="eyebrow eyebrow-sm">UX Design</p>
+            <ul class="skill-list">
               <li>Interaction design</li>
               <li>Designing with AI</li>
               <li>Collaboration</li>
@@ -148,18 +169,18 @@
             </ul>
           </div>
           <div class="skill-col">
-            <h4>UX Writing</h4>
-            <ul>
+            <p class="eyebrow eyebrow-sm">UX Writing</p>
+            <ul class="skill-list">
               <li>Write interface copy</li>
-              <li>Voice & tone consistency</li>
+              <li>Voice &amp; tone consistency</li>
               <li>Error message design</li>
               <li>Create in plain language</li>
               <li>Content audits</li>
             </ul>
           </div>
           <div class="skill-col">
-            <h4>Teaching</h4>
-            <ul>
+            <p class="eyebrow eyebrow-sm">Teaching</p>
+            <ul class="skill-list">
               <li>Curriculum design</li>
               <li>Professional learning communities</li>
               <li>Instructional writing</li>
@@ -169,83 +190,112 @@
           </div>
         </div>
       </div>
-      <div class="about-visual">
-        <img src="assets/workspace.png" alt="Desk workspace with laptop and natural light" />
-        <blockquote class="quote">
-          "A user interface is like a joke. If you have to explain it,<br><em>it's not that good.</em>"
-          <cite>Martin LeBlanc</cite>
+
+      <div class="about-side reveal">
+        <div class="about-photo">
+          <img src="assets/portrait.jpg" alt="Tara Horner, UX Designer" loading="lazy" />
+        </div>
+        <blockquote class="quote-card">
+          <p>&ldquo;A user interface is like a joke. If you have to explain it, <em>it's not that good.</em>&rdquo;</p>
+          <cite>— Martin LeBlanc</cite>
         </blockquote>
       </div>
     </div>
   </section>
 
+  <!-- ===== PROCESS / HOW I WORK ===== -->
   <section class="process" id="process">
-    <div class="process-inner">
-      <div class="process-header">
-        <h2>How I work</h2>
-        <span>Process</span>
-      </div>
-      <div class="process-list">
-        <details class="process-item" open>
-          <summary>
-            <span class="process-num">01</span>
-            <span class="process-title">Listen first</span>
-            <span class="process-icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="process-body">Before sketching a single screen I spend time understanding the real users, the business constraints, and the language people already use. Interviews, support tickets, analytics, and stakeholder conversations all feed into a clear problem statement.</div>
-        </details>
-        <details class="process-item">
-          <summary>
-            <span class="process-num">02</span>
-            <span class="process-title">Define the real problem</span>
-            <span class="process-icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="process-body">I translate research into focused problem statements and success metrics. This stage prevents us from solving the wrong thing beautifully, and keeps the team aligned on what "done" actually looks like.</div>
-        </details>
-        <details class="process-item">
-          <summary>
-            <span class="process-num">03</span>
-            <span class="process-title">Design and iterate</span>
-            <span class="process-icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="process-body">Rapid exploration, tight feedback loops, and continuous refinement. I work fluidly between flows, interface design, and microcopy so the product feels coherent at every level.</div>
-        </details>
-        <details class="process-item">
-          <summary>
-            <span class="process-num">04</span>
-            <span class="process-title">Test and refine</span>
-            <span class="process-icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="process-body">Usability testing, content reviews, and real-world feedback close the loop. I treat every release as a learning opportunity and keep refining until the experience feels inevitable.</div>
-        </details>
-      </div>
-    </div>
-  </section>
+    <div class="container">
+      <h2 class="section-title reveal">How I work</h2>
 
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <div>
-        <div class="contact-label">Contact</div>
-        <h2>Let's make something<br><em>worth using.</em></h2>
-        <p>Open to freelance engagements, full-time remote roles, and collaborations.</p>
-      </div>
-      <div class="contact-details">
-        <div class="contact-row">
-          <span class="label">Email</span>
-          <a href="mailto:tarahorner2021@gmail.com">tarahorner2021@gmail.com</a>
+      <div class="accordion reveal" id="accordion">
+        <div class="accordion-item is-open">
+          <button class="accordion-header" aria-expanded="true">
+            <span class="accordion-num">01</span>
+            <span class="accordion-heading">Listen first</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>Before sketching a single screen I spend time understanding the real users, the business constraints, and the language people already use. Interviews, support tickets, analytics, and stakeholder conversations all feed into a clear problem statement.</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-row">
-          <span class="label">LinkedIn</span>
-          <a href="https://linkedin.com/in/tara-horner" target="_blank" rel="noopener">linkedin.com/in/tara-horner</a>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-num">02</span>
+            <span class="accordion-heading">Define the real problem</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>I translate research into focused problem statements and success metrics. This stage prevents us from solving the wrong thing beautifully, and keeps the team aligned on what "done" actually looks like.</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-row">
-          <span class="label">Currently</span>
-          <span>Based in New Mexico, USA. Open to remote work</span>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-num">03</span>
+            <span class="accordion-heading">Design and iterate</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>Rapid exploration, tight feedback loops, and continuous refinement. I work fluidly between flows, interface design, and micro-copy so the product feels coherent at every level.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-num">04</span>
+            <span class="accordion-heading">Test and refine</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>Usability testing, content reviews, and real-world feedback close the loop. I treat every release as a learning opportunity and keep refining until the experience feels solid.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>© 2026 Tara Horner</footer>
+  <!-- ===== CONTACT ===== -->
+  <footer class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-lead reveal">
+        <p class="eyebrow eyebrow-gold">Contact</p>
+        <h2 class="section-title contact-title">Let's make something<br /><em>worth using.</em></h2>
+        <p class="contact-note">Open to freelance engagements, full-time remote roles, and collaborations.</p>
+      </div>
+
+      <div class="contact-details reveal">
+        <div class="contact-field">
+          <p class="eyebrow eyebrow-gold eyebrow-sm">Email</p>
+          <a href="mailto:tarahorner2021@gmail.com" class="contact-value link-underline">tarahorner2021@gmail.com</a>
+        </div>
+        <div class="contact-field">
+          <p class="eyebrow eyebrow-gold eyebrow-sm">LinkedIn</p>
+          <a href="https://linkedin.com/in/tara-horner" target="_blank" rel="noopener" class="contact-value link-underline">linkedin.com/in/tara-horner</a>
+        </div>
+        <div class="contact-field">
+          <p class="eyebrow eyebrow-gold eyebrow-sm">Currently</p>
+          <p class="contact-value">Based in New Mexico, USA — open to remote work</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 11.5V2.5M7 2.5 2.9 6.6M7 2.5l4.1 4.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
