@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luke Pope Leather — Tara Horner</title>
+<meta name="description" content="Case study: designing a mobile storefront for a one-person leather shop — ready-to-ship and coming-soon inventory, a custom order request, and a portfolio gallery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV (same as home page) ===== -->
+<header class="nav-wrap">
+  <nav class="nav" id="nav">
+    <a href="index.html#top" class="nav-brand">
+      <span class="nav-brand-name">Tara Horner</span>
+      <span class="nav-brand-sep">|</span>
+      <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#top" class="nav-link" data-nav>Home</a></li>
+      <li><a href="index.html#work" class="nav-link is-active" data-nav>Case studies</a></li>
+      <li><a href="index.html#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="index.html#process" class="nav-link" data-nav>How I work</a></li>
+      <li><a href="index.html#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="case-page container">
+
+    <!-- ===== HERO ===== -->
+    <section class="case-hero reveal">
+      <div class="case-hero-copy">
+        <h1 class="case-hero-title">Luke Pope<br /><em>Leather</em></h1>
+      </div>
+      <div class="case-hero-stack is-phones" aria-hidden="true">
+        <div class="stack-item stack-start"><img src="assets/cs5-home-ready.jpg" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-active"><img src="assets/cs5-custom-order.jpg" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-history"><img src="assets/cs5-gallery.jpg" alt="" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-strip is-triple reveal">
+      <div class="stat-card">
+        <p class="stat-number">4</p>
+        <p class="stat-caption">Core flows shipped: shop, custom order, gallery, orders</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">12</p>
+        <p class="stat-caption">Portfolio pieces cataloged at launch</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">1</p>
+        <p class="stat-caption">Person the entire system was designed around</p>
+      </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Overview</p>
+      <div class="case-copy">
+        <p>Luke Pope Leather is a one-person leather shop — wallets, belts, and holsters built to order on a single bench. Before this project, there was no shop front at all: orders came in over text and Instagram DMs, in-progress pieces lived wherever Luke last set them down, and there was no way for a customer to see what was possible before asking.</p>
+        <p>I designed a mobile shop for a business that will likely never have more than one person running it: browsing what's ready now, requesting a fully custom piece, seeing the shop's actual body of work, and tracking an order after it's placed.</p>
+        <p>The constraint shaped everything: every screen had to work for a single maker checking his phone between projects, not a team running a storefront.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE CHALLENGE ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The challenge</p>
+      <h2 class="section-heading">A one-person shop, and a phone-sized storefront</h2>
+      <div class="case-copy">
+        <p>Luke doesn't have a backend team, a warehouse, or a customer service line — he has a workbench and a phone. Whatever this became had to be maintainable by one person, in whatever time is left over after the leather work itself.</p>
+        <p>Made-to-order businesses like this one have a specific problem: most of what's for sale doesn't exist yet. A standard e-commerce grid, everything in stock, everything buy-now, doesn't tell the truth about how the shop actually works.</p>
+        <p>And the trust problem is real. A customer paying for a custom holster or wallet sight unseen needs a reason to believe the maker can deliver, before they've ever held the leather.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE OPPORTUNITY ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The opportunity</p>
+      <h2 class="section-heading">Sell the process, not just the product</h2>
+      <div class="case-copy">
+        <p>The insight: for a made-to-order shop, the body of work is the sales pitch. A gallery of finished pieces does more to build confidence than any product description could.</p>
+        <p>The opportunity was to design around the two states real inventory actually has — ready to ship today, or coming soon on a real date — instead of forcing every piece into a single always-in-stock model.</p>
+        <p>And for anything that isn't a standard piece, the shop needed its own front door: a custom order request built for a maker who works from a description and a reference photo, not a configurator.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== DESIGN APPROACH ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Design approach</p>
+      <h2 class="section-heading">Four screens, one bench</h2>
+
+      <div class="layer-tabs" role="tablist" aria-label="Design approach stages">
+        <button class="layer-tab is-active" role="tab" aria-selected="true" id="tab-shop" aria-controls="panel-shop" tabindex="0" data-layer="shop">Shop</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-custom" aria-controls="panel-custom" tabindex="-1" data-layer="custom">Custom order</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-gallery" aria-controls="panel-gallery" tabindex="-1" data-layer="gallery">Past work</button>
+      </div>
+
+      <div class="layer-panel is-detail" id="panel-shop" role="tabpanel" aria-labelledby="tab-shop" tabindex="0" data-layer-panel="shop">
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Shop</p>
+          <p>The home screen is the shop, split by a single toggle: Ready to ship and Coming soon.</p>
+          <ul class="layer-list">
+            <li>Ready to ship is real inventory, in stock today</li>
+            <li>Coming soon carries the date each piece will be ready, so a customer can decide whether to wait</li>
+          </ul>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs5-home-ready.jpg" alt="Home screen showing the Ready to ship / Coming soon toggle and a grid of leather goods with category, name, and price" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel is-detail" id="panel-custom" role="tabpanel" aria-labelledby="tab-custom" tabindex="0" data-layer-panel="custom" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Custom order</p>
+          <p>For anything that isn't already in the shop, a direct request form stands in for a configurator most custom pieces wouldn't fit anyway.</p>
+          <ul class="layer-list">
+            <li>Name, contact, an optional need-by date, a plain-language description, and an optional reference file</li>
+            <li>Luke reads every request himself before it becomes an order</li>
+          </ul>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs5-custom-order.jpg" alt="Custom order form with fields for name, email, phone, needed-by date, a description of the piece, and an optional reference file upload" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel is-detail" id="panel-gallery" role="tabpanel" aria-labelledby="tab-gallery" tabindex="0" data-layer-panel="gallery" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Past work</p>
+          <p>The gallery does double duty as portfolio and proof of process — the only place a customer can see the work before they commit to it.</p>
+          <ul class="layer-list">
+            <li>Category filters split finished pieces — wallets, belts, holsters, custom</li>
+            <li>A dedicated Process filter shows the bench itself: tools laid out, a piece mid-build</li>
+          </ul>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs5-gallery.jpg" alt="Past work gallery with category filters — All, Wallets, Belts, Holsters, Custom, Process — showing finished pieces and in-progress bench shots" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== KEY UX PRINCIPLES ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Key UX principles</p>
+      <h2 class="section-heading">Solutions</h2>
+      <p class="section-sub">A storefront that tells the truth about how the shop works</p>
+
+      <div class="principle-callout">
+        <p class="principle-callout-title">Process as proof</p>
+        <p>A gallery of finished pieces sells the product. A gallery that also shows tool layouts and pieces mid-build sells the maker, which matters more when a customer is paying for something that doesn't exist yet.</p>
+      </div>
+
+      <div class="principles-grid">
+        <div class="principle-card">
+          <p class="principle-label">Two shop states</p>
+          <p>Ready to ship and Coming soon live on the same screen, so nothing is sold as in-stock when it isn't.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Reference-first custom form</p>
+          <p>Free-text description plus an optional file upload, matched to how Luke actually works from a client's reference.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Ship-date transparency</p>
+          <p>Every coming-soon piece carries the date it'll be ready, not a vague "pre-order."</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Plain order tracking</p>
+          <p>Delivered, shipped, or in progress — laid out the same way a text-message update would read.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">One-handed everything</p>
+          <p>Add to bag, send a request, check an order — every primary action sits within a thumb's reach of the bottom nav.</p>
+        </div>
+      </div>
+
+      <div class="outcome-block">
+        <p class="section-label">Outcome</p>
+        <p class="section-sub">The shop went from word-of-mouth and DMs to something a customer can actually browse, request, and track.</p>
+
+        <div class="outcome-cards">
+          <div class="outcome-card">
+            <p class="outcome-card-title">Instead of...</p>
+            <p class="outcome-card-flow">Orders over text and DMs → no visual record → a customer buying on trust alone</p>
+          </div>
+          <div class="outcome-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="outcome-card outcome-card-accent">
+            <p class="outcome-card-title">Intended experience</p>
+            <p class="outcome-card-flow">Browse real inventory or request custom → see the actual body of work → track the order after it ships</p>
+          </div>
+        </div>
+
+        <p class="outcome-footnote">Luke Pope Leather stayed a one-person shop the whole way through — this is the version of e-commerce sized to fit on a workbench, not the other way around.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== PROJECT IMPACT ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Project impact</p>
+      <h2 class="section-heading">A storefront sized for one pair of hands</h2>
+      <div class="case-copy">
+        <p>The biggest shift wasn't visual, it was structural: designing every flow around the assumption that the person running the business and the person building the product are the same person, with the same twenty free minutes a day.</p>
+        <p>The design decisions that mattered most:</p>
+      </div>
+      <ul class="case-copy-list">
+        <li>Splitting inventory into Ready to ship and Coming soon instead of forcing a single in-stock model</li>
+        <li>A custom order form built around a description and a reference file, not a rigid configurator</li>
+        <li>The Past work gallery, with a Process filter that shows the making, not just the finished piece</li>
+        <li>Order tracking simple enough to replace a string of text-message updates</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <footer class="case-footer">
+    <div class="container case-footer-inner">
+      <a href="case-study-user-permissions.html" class="case-footer-nav-btn" aria-label="Previous project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="case-footer-next">
+        <p class="section-label">Next project</p>
+        <p class="case-footer-next-title">Visuals to complete stories</p>
+      </div>
+      <a href="case-study-ai.html" class="case-footer-nav-btn" aria-label="Next project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+</main>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 11.5V2.5M7 2.5 2.9 6.6M7 2.5l4.1 4.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+<script src="case-study.js"></script>
+</body>
+</html>

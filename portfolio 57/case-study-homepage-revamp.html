@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Homepage revamp — Tara Horner</title>
+<meta name="description" content="Case study: redesigning Acoustic's homepage into a single, AI-powered entry point for behavioral marketing." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV (same as home page) ===== -->
+<header class="nav-wrap">
+  <nav class="nav" id="nav">
+    <a href="index.html#top" class="nav-brand">
+      <span class="nav-brand-name">Tara Horner</span>
+      <span class="nav-brand-sep">|</span>
+      <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#top" class="nav-link" data-nav>Home</a></li>
+      <li><a href="index.html#work" class="nav-link is-active" data-nav>Case studies</a></li>
+      <li><a href="index.html#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="index.html#process" class="nav-link" data-nav>How I work</a></li>
+      <li><a href="index.html#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="case-page container">
+
+    <!-- ===== HERO ===== -->
+    <section class="case-hero reveal">
+      <div class="case-hero-copy">
+        <h1 class="case-hero-title">Homepage<br /><em>revamp</em></h1>
+      </div>
+      <div class="case-hero-stack" aria-hidden="true">
+        <div class="stack-item stack-start"><img src="assets/cs-start-state.jpg" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-active"><img src="assets/cs-active-chat.jpg" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-history"><img src="assets/cs-chat-history.jpg" alt="" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-strip reveal">
+      <div class="stat-card">
+        <p class="stat-number">38%</p>
+        <p class="stat-caption">Reduction in time to act on a behavioral signal</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">22%</p>
+        <p class="stat-caption">Increase in marketers engaging with AI recommendations</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">41%</p>
+        <p class="stat-caption">Increase in campaign task completion from homepage</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">6</p>
+        <p class="stat-caption">Separate marketing modules unified into one entry point</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Overview</p>
+      <div class="case-copy">
+        <p>Acoustic is a real-time behavioral marketing platform built for B2C brands. Marketers use this to capture live customer signals: clicks, hesitations, return visits, product interest, enabling marketing teams act on them before the moment passes.</p>
+        <p>This project explored a new home experience. A single starting point that would help marketers move from "What is happening with my customers?" to "What should I send them right now?"</p>
+        <p>I designed an AI-powered homepage that brings together behavioral intelligence, audience signals, campaign performance, and a conversational assistant into one unified entry point.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE CHALLENGE ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The challenge</p>
+      <h2 class="section-heading">Marketers were drowning in signals but starving for action</h2>
+      <div class="case-copy">
+        <p>Marketers are evolving. They need to make data-driven decisions and act on them. How was I going to provide them value without giving them another list report?</p>
+        <p>Before the redesign, a typical workflow looked like...log in → see a lot of copy they were never going to read → click around to find something interesting → pull a report → interpret the numbers → switch tools (probably multiple times) → build a marketing campaign → cross fingers and wish for the best.</p>
+        <p>So, out with the old...and in with the new.</p>
+      </div>
+
+      <div class="before-after">
+        <figure class="before-after-panel">
+          <img src="assets/cs-old-homepage.jpg" alt="Old homepage workflow" loading="lazy" />
+          <figcaption>Before</figcaption>
+        </figure>
+        <div class="before-after-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <figure class="before-after-panel">
+          <img src="assets/cs-new-start-state.jpg" alt="New homepage start state" loading="lazy" />
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE OPPORTUNITY ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The opportunity</p>
+      <h2 class="section-heading">Let the platform do the work of finding what matters</h2>
+      <div class="case-copy">
+        <p>Acoustic already had the data. The opportunity was to bring those signals to the surface before the marketer had to search for them.</p>
+        <p>The design goal became make real-time behavioral intelligence feel as natural as having a conversation with a knowledgeable colleague.</p>
+      </div>
+
+      <div class="annotated-shot">
+        <div class="annotated-shot-media">
+          <img src="assets/cs-chat-history.jpg" alt="Homepage start state with chat history and assistant" loading="lazy" />
+        </div>
+        <ul class="callout-list">
+          <li><span class="callout-index">01</span><span>Gives the user a place to find their chat history, but doesn't distract from the target task.</span></li>
+          <li><span class="callout-index">02</span><span>A familiar chat box for when a user wants to just jump in.</span></li>
+          <li><span class="callout-index">03</span><span>Interactive pills give users a way to select from pre-made prompts.</span></li>
+          <li><span class="callout-index">04</span><span>Worked closely with another designer on my team, who designed the insight tiles that assist the chat use case.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== PRODUCT VISION ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Product vision</p>
+      <h2 class="section-heading">Design an experience around 3 connected layers</h2>
+
+      <div class="layer-tabs" role="tablist" aria-label="Product vision layers">
+        <button class="layer-tab is-active" role="tab" aria-selected="true" id="tab-discover" aria-controls="panel-discover" tabindex="0" data-layer="discover">Discover</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-explore" aria-controls="panel-explore" tabindex="-1" data-layer="explore">Explore</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-act" aria-controls="panel-act" tabindex="-1" data-layer="act">Act</button>
+      </div>
+
+      <div class="layer-panel" id="panel-discover" role="tabpanel" aria-labelledby="tab-discover" tabindex="0" data-layer-panel="discover">
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Discover</p>
+          <p>The homepage proactively surfaces the signals that matter most right now. Rather than presenting marketers with a redundant dashboard, the interface leads with live behavioral opportunities such as:</p>
+          <ul class="layer-list">
+            <li>Products with rising purchase intent but low conversion</li>
+            <li>Audience segments showing fatigue or over-targeting</li>
+          </ul>
+          <p>Here, I worked closely with another designer to create these recommendation cards specifically for my use case. Each recommendation card explains what is happening, why it matters, and offers a direct path to act.</p>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs-vision-detail.jpg" alt="Recommendation card detail" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel" id="panel-explore" role="tabpanel" aria-labelledby="tab-explore" tabindex="0" data-layer-panel="explore" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Explore</p>
+          <p>I needed to provide an experience that allowed a marketer to target information, dive in without losing context, and take action. All from the chat experience.</p>
+          <p>Acoustic Connect organizes the full picture across: Analytics · Content Studio · Audience · Catalogue · Behavior Studio · Campaigns</p>
+          <p>The homepage acts as the connective layer giving users a consistent entry point into any of these areas based on what the platform has already identified as worth their attention.</p>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs-explore-panel.jpg" alt="Chat assistant conversation with a familiar chat box and typing indicator" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel" id="panel-act" role="tabpanel" aria-labelledby="tab-act" tabindex="0" data-layer-panel="act" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Act</p>
+          <p>I identified a need to simplify data and quickly act. The kicker was, this is useless if I couldn't bring real value to the user. This product is historically good at bringing the most rich data to the users, where we lacked was making it actionable. That is precisely where I jumped in. Create a familiar AI experience, enrich it with meaningful conversations, and add the ability to action all while never leaving the chat page.</p>
+          <p>The assistant interprets live behavioral data and guides the marketer toward the relevant insight and next action, no SQL, no report building required.</p>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs-act-panel.jpg" alt="Chat assistant suggesting campaign actions with quick-start prompt pills" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== KEY UX PRINCIPLES ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Key UX principles</p>
+      <h2 class="section-heading">Design decisions</h2>
+      <p class="section-sub">Make behavioral intelligence feel like a marketing superpower, not a data science project.</p>
+
+      <div class="principle-callout">
+        <p class="principle-callout-title">Reduce cognitive load</p>
+        <p>Users shouldn't need to understand a full data model to get value from it. This homepage does the heavy lifting.</p>
+      </div>
+
+      <div class="principles-grid">
+        <div class="principle-card">
+          <p class="principle-label">Speak in marketing terms</p>
+          <p>The interface speaks in terms of revenue, engagement, and campaign outcomes — not data attributes, behavioral scores, or model outputs.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Make AI approachable</p>
+          <p>The conversational interface gives non-technical marketers a familiar way to access the most sophisticated behavioral capabilities.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Trust</p>
+          <p>Make AI feel like a knowledgeable colleague, not a black box making mysterious recommendations.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Surface signals proactively</p>
+          <p>Acoustic already knows which customers are ready to convert. The product should lead with that — not bury it in a module.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Keep context intact</p>
+          <p>Moving from a live behavioral signal into a campaign conversation should feel like one continuous task, not a series of context switches.</p>
+        </div>
+      </div>
+
+      <div class="outcome-block">
+        <p class="section-label">Outcome</p>
+        <p class="section-sub">The resulting experience shifts the, otherwise siloed, tools into a unified, signal-led workspace.</p>
+
+        <div class="outcome-cards">
+          <div class="outcome-card">
+            <p class="outcome-card-title">Instead of...</p>
+            <p class="outcome-card-flow">Signal detected → buried in a tool → marketer never sees it</p>
+          </div>
+          <div class="outcome-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="outcome-card outcome-card-accent">
+            <p class="outcome-card-title">Designed experience</p>
+            <p class="outcome-card-flow">Signal surfaces → marketer asks → AI explains → action initiated</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== PROJECT IMPACT ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Project impact</p>
+      <h2 class="section-heading">The numbers moved and so did the conversation</h2>
+      <div class="case-copy">
+        <p>The most important lesson from this project was that behavioral marketing UX isn't about showing marketers more data. It's about helping them answer the question, "is this worth my attention?"</p>
+        <p>The final homepage concept turned a collection of powerful modules into a single, signal-led workspace that helps marketing teams act on live customer intent before the moment passes.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <footer class="case-footer">
+    <div class="container case-footer-inner">
+      <a href="case-study-usage-dashboards.html" class="case-footer-nav-btn" aria-label="Previous project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="case-footer-next">
+        <p class="section-label">Next project</p>
+        <p class="case-footer-next-title">Pulse mobile app</p>
+      </div>
+      <a href="case-study-pulse.html" class="case-footer-nav-btn" aria-label="Next project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+</main>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 11.5V2.5M7 2.5 2.9 6.6M7 2.5l4.1 4.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+<script src="case-study.js"></script>
+</body>
+</html>

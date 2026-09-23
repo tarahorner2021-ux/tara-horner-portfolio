@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Advanced user permissions &amp; brand settings — Tara Horner</title>
+<meta name="description" content="Case study: designing a role-based permission matrix, guided onboarding, and a role-scoped brand settings composer for an enterprise admin suite." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV (same as home page) ===== -->
+<header class="nav-wrap">
+  <nav class="nav" id="nav">
+    <a href="index.html#top" class="nav-brand">
+      <span class="nav-brand-name">Tara Horner</span>
+      <span class="nav-brand-sep">|</span>
+      <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#top" class="nav-link" data-nav>Home</a></li>
+      <li><a href="index.html#work" class="nav-link is-active" data-nav>Case studies</a></li>
+      <li><a href="index.html#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="index.html#process" class="nav-link" data-nav>How I work</a></li>
+      <li><a href="index.html#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="case-page container">
+
+    <!-- ===== HERO ===== -->
+    <section class="case-hero reveal">
+      <div class="case-hero-copy">
+        <h1 class="case-hero-title">Advanced user<br /><em>permissions</em></h1>
+      </div>
+      <div class="case-hero-stack" aria-hidden="true">
+        <div class="stack-item stack-start"><img src="assets/cs4-user-mgmt-default.png" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-active"><img src="assets/cs4-hero-roles-landscape.png" alt="" loading="lazy" /></div>
+        <div class="stack-item stack-history"><img src="assets/cs4-user-mgmt-empty.png" alt="" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-strip is-triple reveal">
+      <div class="stat-card">
+        <p class="stat-number">4wk</p>
+        <p class="stat-caption">Concept to production</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">3</p>
+        <p class="stat-caption">New enterprise wins citing permissions</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number">40+</p>
+        <p class="stat-caption">Permission types across 4 functional areas designed and documented</p>
+      </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Overview</p>
+      <div class="case-copy">
+        <p>A major enterprise customer was at risk of churning because we lacked the user permission and brand customization controls their admins and marketers needed. I had 4 weeks to ship a complete administration suite or lose the account.</p>
+        <p>The result was a full redesign of the user management experience: a role-based permission matrix across four functional areas (Marketing &amp; campaigns, Content &amp; assets, Administration, Analytics &amp; Reporting), a guided role creation and editing flow, three onboarding paths for bringing teams in, and a brand settings composer scoped to role-based access.</p>
+        <p>What started as a retention problem became one of the product's most capable enterprise features.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE CHALLENGE ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The challenge</p>
+      <h2 class="section-heading">Enterprise-grade control that didn't exist yet</h2>
+      <div class="case-copy">
+        <p>Enterprise customers operate under strict access control requirements. Teams need to define exactly who can read, create, update, or delete within each area of the product complete with audit trails when something changes.</p>
+        <p>We had basic user management; you could add users and assign broad roles. What we didn't have was the granular, matrix-based permission system an enterprise security team would accept.</p>
+        <p>The complexity was real. A well-designed permission system has to:</p>
+      </div>
+      <ul class="case-copy-list">
+        <li>Be comprehensive enough to satisfy a security admin with strict compliance requirements.</li>
+        <li>Be legible enough for an IT generalist who doesn't use the product daily.</li>
+        <li>Show the downstream consequences of any permission change before it's applied.</li>
+        <li>Scale to an organization with dozens of users across multiple roles.</li>
+        <li>Include a path for bulk user import .</li>
+      </ul>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== THE OPPORTUNITY ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">The opportunity</p>
+      <h2 class="section-heading">Compose control, don't configure it</h2>
+      <div class="case-copy">
+        <p>The insight that shaped the entire design direction: the people configuring permissions are not the same people who use the product every day. An IT admin setting up roles for a marketing team needs to understand what those permissions mean in practice.</p>
+        <p>The design opportunity was to create a permission system that communicated consequence. Not just "check this box to allow Create" but "here is what a Campaign Manager can and cannot do across every area of the product."</p>
+        <p>The goal became to make enterprise-grade access control feel like a visual configuration tool, not a spreadsheet of toggles.</p>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== DESIGN APPROACH ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Design approach</p>
+      <h2 class="section-heading">Four surfaces, one coherent system</h2>
+
+      <div class="layer-tabs" role="tablist" aria-label="Design approach stages">
+        <button class="layer-tab is-active" role="tab" aria-selected="true" id="tab-users" aria-controls="panel-users" tabindex="0" data-layer="users">Manage users</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-roles" aria-controls="panel-roles" tabindex="-1" data-layer="roles">Assign roles</button>
+        <button class="layer-tab" role="tab" aria-selected="false" id="tab-onboard" aria-controls="panel-onboard" tabindex="-1" data-layer="onboard">Bring teams in</button>
+      </div>
+
+      <div class="layer-panel" id="panel-users" role="tabpanel" aria-labelledby="tab-users" tabindex="0" data-layer-panel="users">
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">User management</p>
+          <p>The user management home serves as the central view for administrators; a table of all users, their assigned roles, and quick access to edit or remove. Three states were designed to cover the full admin life-cycle:</p>
+          <ul class="layer-list">
+            <li>Default state — full user list with role assignments, search, and inline actions</li>
+            <li>Empty state — a guided onboarding view offering three paths: add manually, import from CSV, or sync from SSO</li>
+            <li>Search state — filtered results with clear visual feedback on what's being searched</li>
+          </ul>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs4-user-mgmt-default.png" alt="User management home showing the full user list with role assignments and an edit/delete menu open on a selected user" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel" id="panel-roles" role="tabpanel" aria-labelledby="tab-roles" tabindex="0" data-layer-panel="roles" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Role management</p>
+          <p>The role management view gives administrators a bird's-eye view of every role in the organization , who holds it, what tags are associated with it, and whether it's a standard or custom role.</p>
+          <p>Creating or editing a role opens a slide-in panel that keeps the role list visible in context. Admins can see all existing roles while building a new one, which prevents duplication and helps them understand how a new role fits the existing structure.</p>
+          <p>The centerpiece of the system is the permission matrix .  A structured grid that maps every functional area  against four access levels: Read only, Create, Update, Delete. Each cell is a checkbox,  but the matrix is designed to be read as a whole. An admin reviewing a role can immediately see: this Campaign Manager can create and update campaigns, read content, and has no access to administration.</p>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs4-role-permission-matrix.png" alt="Role management list with a Create new role panel open, showing the permission matrix grid of Marketing & campaigns, Content & assets, Administration, and Analytics & reporting against Read-only, Create, Update, and Delete" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="layer-panel" id="panel-onboard" role="tabpanel" aria-labelledby="tab-onboard" tabindex="0" data-layer-panel="onboard" hidden>
+        <div class="layer-panel-copy">
+          <p class="layer-panel-title">Bring teams in</p>
+          <p>Add manually, import from CSV, or sync from SSO. The empty state guides administrators to the right path for their organization size and IT setup.</p>
+        </div>
+        <div class="layer-panel-media">
+          <img src="assets/cs4-user-mgmt-empty.png" alt="Empty state offering three onboarding paths: add manually, import from CSV, or sync from SSO" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== KEY UX PRINCIPLES ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Key UX principles</p>
+      <h2 class="section-heading">Solutions</h2>
+      <p class="section-sub">Enterprise-grade control with a human interface</p>
+
+      <div class="principle-callout">
+        <p class="principle-callout-title">Permission matrix</p>
+        <p>The centerpiece of the system is the permission matrix . A structured grid that maps every functional area against four access levels: Read only, Create, Update, Delete.</p>
+      </div>
+
+      <div class="principles-grid">
+        <div class="principle-card">
+          <p class="principle-label">Composable roles</p>
+          <p>Standard roles plus modular add-ons.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Guided CSV import</p>
+          <p>A documented import flow for bulk user onboarding: required column format, inline validation, and clear error states.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Brand settings composer</p>
+          <p>Brand token control scoped to roles. Admins can lock brand settings to specific roles, enabling white-label environments for client-facing teams.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Three onboarding paths</p>
+          <p>Add manually, import from CSV, or sync from SSO. The empty state guides administrators to the right path for their organization size and IT setup.</p>
+        </div>
+        <div class="principle-card">
+          <p class="principle-label">Brand control as a permission</p>
+          <p>Brand settings are governed by the same role framework as data access; who can see, who can change, and who can lock brand tokens is an admin decision.</p>
+        </div>
+      </div>
+
+      <div class="outcome-block">
+        <p class="section-label">Outcome</p>
+        <p class="section-sub">The Advanced Permissions suite turned a retention risk into a new enterprise capability.</p>
+
+        <div class="outcome-cards">
+          <div class="outcome-card">
+            <p class="outcome-card-title">Instead of...</p>
+            <p class="outcome-card-flow">Basic user roles → no permission granularity → enterprise requirement unmet → churn risk</p>
+          </div>
+          <div class="outcome-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="outcome-card outcome-card-accent">
+            <p class="outcome-card-title">Intended experience</p>
+            <p class="outcome-card-flow">Role composer → permission matrix → brand control → enterprise requirement met → account renewed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- ===== PROJECT IMPACT ===== -->
+    <section class="case-section reveal">
+      <p class="section-label">Project impact</p>
+      <h2 class="section-heading">Churn prevented. A new enterprise capability shipped.</h2>
+      <div class="case-copy">
+        <p>The at-risk account renewed. The permissions suite shipped within the 4-week window and immediately became a pillar of our sales story. A feature that hadn't existed became something sales teams could demo with confidence.</p>
+        <p>My design decisions that had the most impact:</p>
+      </div>
+      <ul class="case-copy-list">
+        <li>The permission matrix. Security teams could evaluate a role's full access footprint.</li>
+        <li>Composable add-on roles reduced the number of custom roles organizations needed to create and maintain.</li>
+        <li>The CSV import path unblocked onboarding for large organizations with existing user directories.</li>
+        <li>Brand settings as a governed permission answered a recurring sales question about white-labeling.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <footer class="case-footer">
+    <div class="container case-footer-inner">
+      <a href="case-study-3rd-party-integrations.html" class="case-footer-nav-btn" aria-label="Previous project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="case-footer-next">
+        <p class="section-label">Next project</p>
+        <p class="case-footer-next-title">Luke Pope Leather</p>
+      </div>
+      <a href="case-study-leather.html" class="case-footer-nav-btn" aria-label="Next project">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+</main>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 11.5V2.5M7 2.5 2.9 6.6M7 2.5l4.1 4.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+<script src="case-study.js"></script>
+</body>
+</html>
