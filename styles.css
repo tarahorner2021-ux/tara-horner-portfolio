@@ -350,7 +350,7 @@ em{ font-family: var(--serif); font-style: italic; font-weight: 300; }
 .feature-card:hover .feature-media img{ transform: scale(1.05); }
 
 /* Looping "video" crossfade — cycles through captured product-flow frames */
-.feature-media-loop{ background: #F6F8FD; }
+.feature-media-loop{ background: #F9FDFF; }
 .loop-frame{
   position: absolute;
   inset: 0;
