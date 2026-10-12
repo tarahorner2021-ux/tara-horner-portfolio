@@ -287,4 +287,5 @@
 .results.is-observed{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .results.is-observed .result{ background: #fff; border-radius: 18px; padding: 24px 26px; box-shadow: 0 10px 26px -16px rgba(30,40,70,0.3); }
 .result-line{ font-family: var(--serif); font-weight: 400; font-size: clamp(19px, 1.9vw, 24px); line-height: 1.3; letter-spacing: 0; margin: 0; color: var(--blue); }
-.band-ink .results.is-observed .result{ background: rgba(255,252,242,0.08); box-shadow: none; } .band-ink .result-line{ color: var(--cream); }
+.band-ink .results.is-observed .result{ background: rgba(255,252,242,0.08); box-shadow: none; } .band-ink .result-line{ color: var(--cream); }/* Before/after pair: same frame size, no cropping. The shorter screen sits on its own background colour. */
+.versus.is-matched .shot img{ display: block; width: 100%; aspect-ratio: 1200 / 716; object-fit: contain; object-position: top; background: #F9FDFF; }
