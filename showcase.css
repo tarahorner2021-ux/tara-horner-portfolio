@@ -276,3 +276,15 @@
 
 /* tighter top of page: the nav is ~80px, so the title only needs a little air below it */
 .hero, .hero.sc-section{ padding-top: clamp(32px, 4vw, 56px); }
+
+/* Role strip under the case study intro */
+.role-strip{ display: flex; flex-wrap: wrap; gap: 14px 40px; margin: 28px 0 0; padding: 18px 0 0; border-top: 1px solid rgba(53,67,93,0.18); }
+.role-strip div{ min-width: 0; }
+.role-strip dt{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--taupe-ink); margin: 0 0 4px; }
+.role-strip dd{ margin: 0; font-size: 15px; line-height: 1.5; color: var(--blue); }
+.band-ink .role-strip{ border-top-color: rgba(255,252,242,0.25); } .band-ink .role-strip dt, .band-ink .role-strip dd{ color: var(--cream); }
+/* Observed outcomes, in words */
+.results.is-observed{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.results.is-observed .result{ background: #fff; border-radius: 18px; padding: 24px 26px; box-shadow: 0 10px 26px -16px rgba(30,40,70,0.3); }
+.result-line{ font-family: var(--serif); font-weight: 400; font-size: clamp(19px, 1.9vw, 24px); line-height: 1.3; letter-spacing: 0; margin: 0; color: var(--blue); }
+.band-ink .results.is-observed .result{ background: rgba(255,252,242,0.08); box-shadow: none; } .band-ink .result-line{ color: var(--cream); }
