@@ -351,7 +351,7 @@ em{ font-family: var(--serif); font-style: italic; font-weight: 300; }
 
 /* Looping "video" crossfade — cycles through captured product-flow frames */
 .feature-media-loop{ background: #F9FDFF; }
-.loop-frame{
+.feature-media .loop-frame{
   position: absolute;
   inset: 0;
   width: 100%;
