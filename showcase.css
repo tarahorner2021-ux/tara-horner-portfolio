@@ -273,3 +273,6 @@
 .scene .stage-pad{ padding-bottom: clamp(70px, 8vw, 110px); }
 .avatar-demo .sc-kicker{ color: var(--taupe-ink); }
 .avatar-demo .sc-lede{ color: var(--blue); max-width: none; }
+
+/* tighter top of page: the nav is ~80px, so the title only needs a little air below it */
+.hero, .hero.sc-section{ padding-top: clamp(96px, 9vw, 120px); }
