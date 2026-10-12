@@ -275,4 +275,4 @@
 .avatar-demo .sc-lede{ color: var(--blue); max-width: none; }
 
 /* tighter top of page: the nav is ~80px, so the title only needs a little air below it */
-.hero, .hero.sc-section{ padding-top: clamp(96px, 9vw, 120px); }
+.hero, .hero.sc-section{ padding-top: clamp(32px, 4vw, 56px); }
