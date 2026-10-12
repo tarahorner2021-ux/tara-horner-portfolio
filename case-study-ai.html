@@ -10,12 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="case-study.css" />
+<link rel="stylesheet" href="showcase.css" />
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== NAV (same as home page) ===== -->
 <header class="nav-wrap">
   <nav class="nav" id="nav">
     <a href="index.html#top" class="nav-brand">
@@ -23,11 +23,9 @@
       <span class="nav-brand-sep">|</span>
       <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
     </a>
-
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html#top" class="nav-link" data-nav>Home</a></li>
       <li><a href="index.html#work" class="nav-link is-active" data-nav>Case studies</a></li>
@@ -38,204 +36,67 @@
   </nav>
 </header>
 
-<main id="main">
-  <div class="case-page container">
+<main id="main" class="sc">
 
-    <!-- ===== HERO ===== -->
-    <section class="case-hero reveal">
-      <div class="case-hero-copy">
-        <h1 class="case-hero-title">Visuals to<br /><em>complete stories</em></h1>
-      </div>
-      <div class="case-hero-stack is-launch" aria-hidden="true">
-        <div class="stack-item stack-start"><img src="assets/cs6-hero-mcp.jpg" alt="" loading="lazy" /></div>
-        <div class="stack-item stack-active"><img src="assets/cs6-hero-s3.jpg" alt="" loading="lazy" /></div>
-        <div class="stack-item stack-history"><img src="assets/cs6-hero-dynamics.jpg" alt="" loading="lazy" /></div>
-      </div>
-    </section>
-
-    <!-- ===== STATS ===== -->
-    <section class="stats-strip is-triple reveal">
-      <div class="stat-card">
-        <p class="stat-number">3</p>
-        <p class="stat-caption">New integrations given a launch hero — AWS S3, an AI assistant, Microsoft Dynamics 365</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-number">1</p>
-        <p class="stat-caption">Reusable hero pattern powering all three launches</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-number">1</p>
-        <p class="stat-caption">Visual mark designed for the assistant — its first</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== OVERVIEW ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Overview</p>
-      <div class="case-copy">
-        <p>Acoustic Connect ships new data integrations on a rolling basis — an AWS S3 sync, a native AI assistant built on MCP, a Microsoft Dynamics 365 bridge — and each one needs a launch moment that explains itself in a few seconds, on a page sales and marketing can actually point people to.</p>
-        <p>Alongside those launches, the in-product assistant itself had a smaller, quieter gap: nothing in the chat interface signaled that an AI, not a static system message, was on the other end of a response.</p>
-        <p>I designed the hero pattern behind three integration launches, and gave the assistant a visual mark of its own — a small diamond that pulses while it's active.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== THE CHALLENGE ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">The challenge</p>
-      <h2 class="section-heading">Three launches, no family resemblance</h2>
-      <div class="case-copy">
-        <p>Each integration had been treated as its own one-off: a headline, a screenshot, whatever call to action felt right that week, restyled from the last one. Nothing held them together as the same product, and a prospect looking at two integration pages side by side wouldn't necessarily recognize them as related.</p>
-        <p>The assistant had a version of the same problem. Its responses rendered in the same plain bubble as a form-validation message or an error state — nothing in the interface marked a message as the AI actually talking.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== THE OPPORTUNITY ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">The opportunity</p>
-      <h2 class="section-heading">One pattern, flexible enough to carry three different stories</h2>
-      <div class="case-copy">
-        <p>The opportunity was a single hero pattern built to flex across very different integrations — an infrastructure sync, an AI feature, a CRM bridge — without reading as a template stretched three ways: a headline that states the specific value, one plain-language line of what it actually does, a call to action matched to how technical the audience is, and a supporting visual that changes shape per integration while everything around it stays fixed.</p>
-        <p>For the assistant, the opportunity was smaller but just as concrete: give it a mark, not a full loading state. A pulse reads as "I'm here and thinking" without taking over the conversation the way a spinner or a "typing…" label does.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== DESIGN APPROACH ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Design approach</p>
-      <h2 class="section-heading">Three integrations, one hero pattern</h2>
-
-      <div class="layer-tabs" role="tablist" aria-label="Integration launch heroes">
-        <button class="layer-tab is-active" role="tab" aria-selected="true" id="tab-s3" aria-controls="panel-s3" tabindex="0" data-layer="s3">AWS S3</button>
-        <button class="layer-tab" role="tab" aria-selected="false" id="tab-mcp" aria-controls="panel-mcp" tabindex="-1" data-layer="mcp">AI assistant</button>
-        <button class="layer-tab" role="tab" aria-selected="false" id="tab-dynamics" aria-controls="panel-dynamics" tabindex="-1" data-layer="dynamics">Dynamics 365</button>
-      </div>
-
-      <div class="layer-panel" id="panel-s3" role="tabpanel" aria-labelledby="tab-s3" tabindex="0" data-layer-panel="s3">
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title">AWS S3</p>
-          <p>The most technical of the three, so the hero leads with the specific outcome, "Your AWS data, live in Connect," and closes with a specific action: "Connect your S3 bucket" instead of a generic "Get started."</p>
-          <ul class="layer-list">
-            <li>An icon row previews exactly what starts flowing in — audience, consent, products, behavioral signals</li>
-            <li>The supporting visual is the AWS icon itself, so the audience it's for recognizes the integration at a glance</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs6-hero-s3.jpg" alt="AWS S3 integration hero: &quot;Your AWS data, live in Connect,&quot; with a Connect your S3 bucket button and an icon row for Audience, Consent, Products, and Behavioral Signals" loading="lazy" />
-        </div>
-      </div>
-
-      <div class="layer-panel" id="panel-mcp" role="tabpanel" aria-labelledby="tab-mcp" tabindex="0" data-layer-panel="mcp" hidden>
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title">AI assistant</p>
-          <p>Rather than a static screenshot, the hero shows a live-looking exchange: a question typed in, a real answer with real numbers, a natural follow-up already queued. The value reads before anyone signs up.</p>
-          <ul class="layer-list">
-            <li>A stat strip underneath grounds the preview in the platform's own numbers — audiences, data sources, campaign ROI, reach, live sessions</li>
-            <li>The call to action stays general, "Get started," since the next step is a conversation, not a config screen</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs6-hero-mcp.jpg" alt="AI assistant hero: &quot;AI meets Acoustic Connect,&quot; with a live chat preview answering a question about campaign performance and a stat strip for audiences, data sources, ROI, reach, and live sessions" loading="lazy" />
-        </div>
-      </div>
-
-      <div class="layer-panel" id="panel-dynamics" role="tabpanel" aria-labelledby="tab-dynamics" tabindex="0" data-layer-panel="dynamics" hidden>
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title">Dynamics 365</p>
-          <p>A CRM bridge is the least visual of the three integrations, so the hero borrows motion instead: three feature tags scattered at a slight tilt, each with its own small icon, standing in for a product screenshot that wouldn't have said much on its own.</p>
-          <ul class="layer-list">
-            <li>The Microsoft Dynamics 365 mark sits opposite the Acoustic Connect mark, naming both sides of the bridge up front</li>
-            <li>The call to action, "Connect now," matches the general audience of a CRM integration page</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs6-hero-dynamics.jpg" alt="Microsoft Dynamics 365 hero: &quot;Bridge your CRM data to marketing audiences seamlessly,&quot; with a Connect now button and three tilted feature tags for closed-loop marketing, real-time sync, and permission-based engagement" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== KEY UX PRINCIPLES ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Key UX principles</p>
-      <h2 class="section-heading">Solutions</h2>
-      <p class="section-sub">One pattern that flexes by integration, and a mark that gives the assistant a presence</p>
-
-      <div class="principle-callout">
-        <p class="principle-callout-title">A mark that says "I'm here," not "wait"</p>
-        <p>The assistant didn't need a full loading state to feel alive, just enough motion to read as present. A gentle pulse says that without asking for the user's attention the way a spinner or a "typing…" label would.</p>
-      </div>
-
-      <div class="avatar-demo">
-        <div class="avatar-demo-visual" aria-hidden="true">
-          <span class="avatar-pulse-ring"></span>
-          <img src="assets/cs6-diamond-avatar.svg" alt="" class="avatar-pulse-mark" />
-        </div>
-        <div class="avatar-demo-copy">
-          <p class="avatar-demo-label">The mark, live</p>
-          <p>Same diamond used next to every assistant response, animating here the way it does in the product.</p>
-        </div>
-      </div>
-
-      <div class="principles-grid">
-        <div class="principle-card">
-          <p class="principle-label">One pattern, three shapes</p>
-          <p>Headline, one plain-language value line, a call to action, and a supporting visual repeat across all three launches — only the supporting visual changes shape per integration.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">A CTA matched to the audience</p>
-          <p>"Connect your S3 bucket" asks for the specific, technical action that page needs; "Get started" and "Connect now" stay general where the next step is a conversation, not a config screen.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">No jargon in the headline</p>
-          <p>"Your AWS data, live in Connect" and "Bridge your CRM data to marketing audiences" say what happens, not what it's built on.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">A live preview over a screenshot</p>
-          <p>The assistant's hero shows a real-looking exchange instead of a static product shot, so its value reads before anyone signs up.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">The assistant gets a face</p>
-          <p>The diamond mark sits next to every assistant response, in the same place a person's own avatar would sit next to theirs.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== PROJECT IMPACT ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Project impact</p>
-      <h2 class="section-heading">Three launches that now read as one product</h2>
-      <div class="case-copy">
-        <p>The three launch pages share a single pattern now, so a new integration ships as a content problem, not a design problem: drop in a headline, a value line, and a supporting visual, and the rest of the page already works.</p>
-        <p>The assistant's mark did something smaller but more immediate — a chat that used to read like a transcript now has something visibly alive on the other end of it.</p>
-      </div>
-    </section>
-
+<section class="hero sc-section">
+  <div class="sc-wrap hero-center">
+    <p class="sc-kicker">Launch visuals · Acoustic Connect</p>
+    <h1 class="sc-h1">Visuals to <em>complete stories</em></h1>
+    <p class="sc-lede">Three integration launches that finally look like family, and a little pulsing diamond that gives the AI assistant a presence.</p>
   </div>
+  <div class="sc-wrap is-wide">
+    <div class="collage">
+      <figure class="shot is-browser"><img src="assets/cs6-hero-s3.jpg" alt="AWS S3 launch hero" loading="lazy" /></figure>
+      <figure class="shot is-browser"><img src="assets/cs6-hero-mcp.jpg" alt="AI assistant launch hero" loading="lazy" /></figure>
+      <figure class="shot is-browser"><img src="assets/cs6-hero-dynamics.jpg" alt="Microsoft Dynamics 365 launch hero" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sc-section">
+  <div class="sc-wrap">
+    <div class="story is-grid"><div class="story-item" data-n="01"><p class="sc-kicker">The situation</p><p>New integrations ship all the time, and each launch page was a one-off with its own look. Next to each other they didn't read as the same product. The in-product assistant had a gap too: its replies looked like any other system message.</p></div><div class="story-item" data-n="02"><p class="sc-kicker">The task</p><p>Create a hero that works for very different launches, and give the assistant a way to say that an AI is the one talking.</p></div><div class="story-item" data-n="03"><p class="sc-kicker">What I did</p><p>I made one pattern: a headline stating the value, a plain line on what it does, a call to action that fits the audience, and a visual that changes per launch. For the assistant, I designed a small diamond that pulses while it's working.</p></div><div class="story-item" data-n="04"><p class="sc-kicker">What happened</p><p>Three launches now read as one product, and the next one is a content job instead of a design job. The assistant finally feels like someone is on the other end.</p></div></div>
+  </div>
+</section>
+
+<section class="sc-section band-sand">
+  <div class="sc-wrap is-wide">
+    <p class="sc-kicker">One pattern, three shapes</p>
+    <h2 class="sc-h2">Same bones, different story</h2>
+    <div class="poster" style="margin-top:48px">
+      <div class="poster-media stage stage-lilac stage-pad"><figure class="shot is-browser"><img src="assets/cs6-hero-s3.jpg" alt="AWS S3 launch hero with an icon row" loading="lazy" /></figure></div>
+      <div class="poster-copy"><p class="sc-kicker">AWS S3</p><h3 class="sc-h2">Your AWS data, live in Connect</h3><p>The most technical audience, so the button asks for the specific action: connect your bucket.</p></div>
+    </div>
+    <div class="poster is-flip">
+      <div class="poster-media stage stage-ink stage-pad"><figure class="shot is-browser"><img src="assets/cs6-hero-mcp.jpg" alt="AI assistant launch hero with a live chat preview" loading="lazy" /></figure></div>
+      <div class="poster-copy"><p class="sc-kicker">AI assistant</p><h3 class="sc-h2">A real exchange instead of a screenshot</h3><p>A question, an answer with real numbers, and a follow-up queued up. The value shows before anyone signs up.</p></div>
+    </div>
+    <div class="poster">
+      <div class="poster-media stage stage-mint stage-pad"><figure class="shot is-browser"><img src="assets/cs6-hero-dynamics.jpg" alt="Microsoft Dynamics 365 launch hero with tilted feature tags" loading="lazy" /></figure></div>
+      <div class="poster-copy"><p class="sc-kicker">Dynamics 365</p><h3 class="sc-h2">A CRM bridge, shown with motion and tags</h3><p>The least visual integration borrows tilted feature tags and names both sides of the bridge up front.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sc-section band-ink">
+  <div class="sc-wrap">
+    <div class="avatar-demo">
+      <div class="avatar-demo-visual" aria-hidden="true"><span class="avatar-pulse-ring"></span><img src="assets/cs6-diamond-avatar.svg" alt="" class="avatar-pulse-mark" /></div>
+      <div class="avatar-demo-copy"><p class="sc-kicker">The mark, live</p><p class="sc-lede" style="margin-top:0">The same diamond that sits beside every assistant reply. It pulses just enough to say "I'm here," without a spinner taking over the chat.</p></div>
+    </div>
+    <div style="margin-top:64px"><div class="results "><div class="result"><p class="result-num">3</p><p class="result-label">Launch heroes: AWS S3, an AI assistant, Microsoft Dynamics 365</p></div><div class="result"><p class="result-num">1</p><p class="result-label">Reusable hero pattern behind all three</p></div><div class="result"><p class="result-num">1</p><p class="result-label">Visual mark designed for the assistant, its first</p></div></div></div>
+  </div>
+</section>
 
   <!-- ===== NEXT PROJECT ===== -->
   <footer class="case-footer">
     <div class="container case-footer-inner">
-      <a href="case-study-leather.html" class="case-footer-nav-btn" aria-label="Previous project">
-        <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <a href="case-study-leather.html" class="case-footer-nav-btn" aria-label="Previous project"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <div class="case-footer-next">
         <p class="section-label">Next project</p>
         <p class="case-footer-next-title">AI usage dashboards</p>
       </div>
-      <a href="case-study-usage-dashboards.html" class="case-footer-nav-btn" aria-label="Next project">
-        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <a href="case-study-usage-dashboards.html" class="case-footer-nav-btn" aria-label="Next project"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </footer>
 </main>
@@ -246,5 +107,6 @@
 
 <script src="script.js"></script>
 <script src="case-study.js"></script>
+<script src="showcase.js"></script>
 </body>
 </html>

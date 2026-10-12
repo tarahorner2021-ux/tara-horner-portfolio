@@ -23,7 +23,7 @@
   font-weight: 300;
   font-size: clamp(28px, 3.4vw, 40px);
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  letter-spacing: 0em;
   color: var(--blue);
   margin: 0 0 8px;
   max-width: 780px;
@@ -49,7 +49,7 @@
   font-weight: 300;
   font-size: clamp(52px, 7vw, 92px);
   line-height: 1.02;
-  letter-spacing: -0.025em;
+  letter-spacing: 0em;
   color: var(--blue);
   margin: 0;
 }
@@ -131,7 +131,7 @@
   font-size: clamp(32px, 3.4vw, 44px);
   color: var(--blue);
   margin: 0 0 8px;
-  letter-spacing: -0.01em;
+  letter-spacing: 0em;
 }
 .stat-caption{
   font-size: 13px;
@@ -627,9 +627,10 @@
 
 /* ---------- Next project footer ---------- */
 .case-footer{
-  background: var(--blue);
+  background: var(--cream);
+  border-top: 1px solid rgba(53,67,93,0.15);
   padding: 56px 0;
-  margin-top: 40px;
+  margin-top: 0;
 }
 .case-footer-inner{
   display: flex;
@@ -640,21 +641,21 @@
 .case-footer-nav-btn{
   width: 44px; height: 44px;
   border-radius: 50%;
-  border: 1px solid rgba(255,252,242,0.3);
-  color: var(--cream);
+  border: 1px solid rgba(53,67,93,0.4);
+  color: var(--blue);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
-.case-footer-nav-btn:hover{ background: rgba(255,252,242,0.12); border-color: rgba(255,252,242,0.6); }
+.case-footer-nav-btn:hover{ background: var(--blue); color: var(--cream); border-color: var(--blue); }
 .case-footer-nav-btn svg{ width: 16px; height: 16px; }
 .case-footer-next{ text-align: center; }
-.case-footer-next .section-label{ color: var(--gold); margin-bottom: 6px; }
+.case-footer-next .section-label{ color: var(--taupe-ink); margin-bottom: 6px; }
 .case-footer-next-title{
   font-family: var(--serif);
   font-weight: 300;
   font-size: 26px;
-  color: var(--cream);
+  color: var(--blue);
   margin: 0;
 }
 

@@ -10,12 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="case-study.css" />
+<link rel="stylesheet" href="showcase.css" />
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== NAV (same as home page) ===== -->
 <header class="nav-wrap">
   <nav class="nav" id="nav">
     <a href="index.html#top" class="nav-brand">
@@ -23,11 +23,9 @@
       <span class="nav-brand-sep">|</span>
       <span class="nav-brand-meta">tarahorner2021@gmail.com</span>
     </a>
-
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html#top" class="nav-link" data-nav>Home</a></li>
       <li><a href="index.html#work" class="nav-link is-active" data-nav>Case studies</a></li>
@@ -38,203 +36,50 @@
   </nav>
 </header>
 
-<main id="main">
-  <div class="case-page container">
+<main id="main" class="sc">
 
-    <!-- ===== HERO ===== -->
-    <section class="case-hero reveal">
-      <div class="case-hero-copy">
-        <h1 class="case-hero-title">Usage dashboards,<br /><em>built to warn early</em></h1>
-      </div>
-      <div class="case-hero-stack is-dashboard" aria-hidden="true">
-        <div class="stack-item stack-start"><img src="assets/cs7-green.jpg" alt="" loading="lazy" /></div>
-        <div class="stack-item stack-active"><img src="assets/cs7-yellow.jpg" alt="" loading="lazy" /></div>
-        <div class="stack-item stack-history"><img src="assets/cs7-red.jpg" alt="" loading="lazy" /></div>
-      </div>
-    </section>
-
-    <!-- ===== STATS ===== -->
-    <section class="stats-strip is-triple reveal">
-      <div class="stat-card">
-        <p class="stat-number">3</p>
-        <p class="stat-caption">Dashboard states: on pace, approaching cap, at cap</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-number">80%</p>
-        <p class="stat-caption">Usage threshold that fires an early warning, before the cap ever hits</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-number">2</p>
-        <p class="stat-caption">Refill paths; one click admin action, and AI assisted request</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== OVERVIEW ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Overview</p>
-      <div class="case-copy">
-        <p>Acoustic Composer, the platform's AI writing assistant, runs on a monthly token allotment. Admins needed a way to see how their org was tracking against that allotment, and both admins and individual users needed a way to act before it ran out, not just a message after it already had.</p>
-        <p>I designed the usage dashboard around three states tied to how close an org actually is to its cap, and built two ways to refill an allotment early: a one-click extend for admins watching the whole org, and an in-product AI assistant that can walk an individual user through requesting more.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== THE CHALLENGE ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">The challenge</p>
-      <h2 class="section-heading">A hard stop is a bad surprise</h2>
-      <div class="case-copy">
-        <p>The existing design showed one number, tokens used out of tokens allotted, with no sense of trajectory. An org burning through its allotment at a dangerous pace looked identical to one cruising comfortably toward its reset date, until the moment it wasn't: Composer would simply stop working mid-period, with a support ticket as the first signal anyone had a problem.</p>
-        <p>That hit two different people differently. An admin managing the org's whole allotment needed to see it coming across every team. An individual marketer mid-task needed to know their own request wouldn't be the one that got cut off.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== THE OPPORTUNITY ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">The opportunity</p>
-      <h2 class="section-heading">Warn early, and make the fix one click away</h2>
-      <div class="case-copy">
-        <p>The opportunity was to turn a single flat number into a trajectory: on pace, approaching cap, or at cap, each with its own color, its own banner copy, and its own next action, so the dashboard's state always matched what actually needed to happen. Approaching-cap alerts were set to fire at 80% usage rather than 100%, giving an org real runway to act instead of a warning that arrives with the door already closing.</p>
-        <p>And since a warning by itself doesn't refill anything, every stage past "on pace" carries its own way out: an <strong>Extend</strong> action an admin can click straight from the org list, and an AI assistant that can walk an individual user through requesting a larger allotment or customizing when their own alert fires, before their next request is the one that gets stopped.</p>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== DESIGN APPROACH ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Design approach</p>
-      <h2 class="section-heading">Three stages, one dashboard</h2>
-
-      <div class="layer-tabs" role="tablist" aria-label="Usage dashboard stages">
-        <button class="layer-tab is-active" role="tab" aria-selected="true" id="tab-green" aria-controls="panel-green" tabindex="0" data-layer="green">On pace</button>
-        <button class="layer-tab" role="tab" aria-selected="false" id="tab-yellow" aria-controls="panel-yellow" tabindex="-1" data-layer="yellow">Approaching cap</button>
-        <button class="layer-tab" role="tab" aria-selected="false" id="tab-red" aria-controls="panel-red" tabindex="-1" data-layer="red">At cap</button>
-      </div>
-
-      <div class="layer-panel is-shot" id="panel-green" role="tabpanel" aria-labelledby="tab-green" tabindex="0" data-layer-panel="green">
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title"><span class="status-dot is-green" aria-hidden="true"></span>On pace</p>
-          <p>The default state reads calm on purpose: a purple banner instead of a warning color, "on pace" instead of a percentage, and a cap-status card that explains the math in plain language rather than just showing a number.</p>
-          <ul class="layer-list">
-            <li>A cap-hit message preview sits on every dashboard, so an admin can see exactly what their team would see if they ever did hit the limit, before it happens, not after</li>
-            <li>Token consumption, period-over-period, and input/output split are all visible without digging, so trajectory is obvious at a glance</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs7-green.jpg" alt="On-pace dashboard: purple banner reading 60% used, on pace, 9 days left, with a green Cap status card and a cap-hit message preview" loading="lazy" />
-        </div>
-      </div>
-
-      <div class="layer-panel is-shot" id="panel-yellow" role="tabpanel" aria-labelledby="tab-yellow" tabindex="0" data-layer-panel="yellow" hidden>
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title"><span class="status-dot is-yellow" aria-hidden="true"></span>Approaching cap</p>
-          <p>At 80% usage the banner itself changes color, the headline changes to name the state directly, "Composer usage approaching cap," and the primary action becomes <strong>Extend now</strong> instead of a passive report link.</p>
-          <ul class="layer-list">
-            <li>The vs-prior-period card gets an amber border and a projected total that's flagged "over cap" outright, turning a trend line into an early warning</li>
-            <li>The cap-status card explains what already happened behind the scenes: an 80% threshold telemetry event fired to the ops team, so the admin knows they're not the only one who's seen it</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs7-yellow.jpg" alt="Approaching-cap dashboard: amber banner reading 87% used, approaching cap, 9 days left, with an Extend now action and a projected total flagged over cap" loading="lazy" />
-        </div>
-      </div>
-
-      <div class="layer-panel is-shot" id="panel-red" role="tabpanel" aria-labelledby="tab-red" tabindex="0" data-layer-panel="red" hidden>
-        <div class="layer-panel-copy">
-          <p class="layer-panel-title"><span class="status-dot is-red" aria-hidden="true"></span>At cap</p>
-          <p>For Acoustic's own operations team, the same logic scales to every org at once: a cross-org table flags any org at or above 80% in amber and any org that's actually hit its cap in red, sorted so the most urgent rows surface first.</p>
-          <ul class="layer-list">
-            <li>Stat cards up top answer the only three questions ops actually asks: how many orgs are close, how many are already stuck, how many tokens has the whole platform burned</li>
-            <li>Every flagged row carries its own one-click <strong>Extend</strong> button, so fixing an at-cap org never requires leaving the table</li>
-          </ul>
-        </div>
-        <div class="layer-panel-media">
-          <img src="assets/cs7-red.jpg" alt="Cross-org operations view: stat cards for active orgs, orgs at 80%, and orgs at cap, with a table flagging Northwind Travel and Globex FinServ red at 100% and 102% of allotment, each with an Extend button" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== KEY UX PRINCIPLES ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Key UX principles</p>
-      <h2 class="section-heading">Solutions</h2>
-      <p class="section-sub">A dashboard that shows where you're headed, and an assistant that can act on it</p>
-
-      <div class="principle-callout">
-        <p class="principle-callout-title">The refill has to be as easy to find as the warning</p>
-        <p>A dashboard that only tells an admin they're about to run out, without a fast way to do something about it, just moves the anxiety earlier. Every approaching-cap or at-cap state carries its own action, not just its own color.</p>
-      </div>
-
-      <div class="cap-status-demo">
-        <div class="cap-status-card">
-          <div class="cap-status-main">
-            <p class="cap-status-label">Cap status</p>
-            <p class="cap-status-headline">On pace.</p>
-          </div>
-          <p class="cap-status-desc">60% of monthly Composer allotment used with 9 days remaining. Approaching-cap alerts fire at 80% with a full stop at 100%.</p>
-          <span class="cap-status-btn">Add credits</span>
-        </div>
-      </div>
-
-      <div class="principles-grid">
-        <div class="principle-card">
-          <p class="principle-label">Trajectory over a raw number</p>
-          <p>"60% used · on pace · 9 days left" says more than "600K / 1M tokens" ever could: the dashboard states a conclusion, not just a measurement.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">Warn at 80%, not 100%</p>
-          <p>The approaching-cap threshold fires early enough that an admin has real runway to act, instead of a warning that arrives at the same moment as the outage.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">Every warning ships with an action</p>
-          <p>Extend now, View details, and the assistant's request-more link all sit right next to the state that triggered them, never a separate page to go find.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">Preview the worst case, safely</p>
-          <p>The cap-hit message preview lets an admin see exactly what their team would see at 100%, without anyone actually having to hit the cap first.</p>
-        </div>
-        <div class="principle-card">
-          <p class="principle-label">One dataset, two audiences</p>
-          <p>The same usage numbers power an org-wide admin view and a personal, per-user view, each surfacing only the comparison that audience actually needs.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="case-divider"></div>
-
-    <!-- ===== PROJECT IMPACT ===== -->
-    <section class="case-section reveal">
-      <p class="section-label">Project impact</p>
-      <h2 class="section-heading">From a hard stop to an early, actionable warning</h2>
-      <div class="case-copy">
-        <p>The three-stage model gives every audience, an individual marketer, an org admin, Acoustic's own operations team, a dashboard that matches its urgency to what's actually happening, instead of one flat number that looks the same right up until it doesn't.</p>
-        <p>Pairing every warning with a refill path, an Extend button for admins and an AI-assisted request for individual users, means the moment someone learns they're close to their cap is also the moment they can do something about it.</p>
-      </div>
-    </section>
-
+<section class="hero sc-section">
+  <div class="sc-wrap">
+    <p class="sc-kicker">AI usage · Acoustic Composer</p>
+    <h1 class="sc-h1">Built to <em>warn early</em></h1>
+    <p class="sc-lede">A dashboard in three moods, plus two ways to refill before anyone hits a wall.</p>
+    <div class="tri" style="margin-top:56px">
+      <div class="tri-col is-green"><div class="tri-head"><h3>On pace</h3></div><figure class="shot is-browser"><img src="assets/cs7-green.jpg" alt="On pace dashboard with a purple banner and a green cap status card" width="1538" height="1583" loading="lazy" /></figure></div>
+      <div class="tri-col is-yellow"><div class="tri-head"><h3>Approaching cap</h3></div><figure class="shot is-browser"><img src="assets/cs7-yellow.jpg" alt="Approaching cap dashboard with an amber banner and Extend now action" width="1440" height="1650" loading="lazy" /></figure></div>
+      <div class="tri-col is-red"><div class="tri-head"><h3>At cap</h3></div><figure class="shot is-browser"><img src="assets/cs7-red.jpg" alt="Operations view flagging orgs at and over their cap" width="1440" height="662" loading="lazy" /></figure></div>
+    </div>
   </div>
+</section>
+
+<section class="sc-section band-ink">
+  <div class="sc-wrap">
+    <div class="story is-rail"><div class="story-item" data-n="01"><p class="sc-kicker">The situation</p><p>Composer runs on a monthly token allotment, and the old screen showed one flat number. An org burning through it looked the same as one coasting, right up until Composer stopped mid-month.</p></div><div class="story-item" data-n="02"><p class="sc-kicker">The task</p><p>Let admins see trouble coming, and let admins and individual users fix it before the cap, not after a support ticket.</p></div><div class="story-item" data-n="03"><p class="sc-kicker">What I did</p><p>I designed three states tied to real usage, each with its own color, copy and next step. Warnings fire at 80%. Admins get a one-click Extend, and users get an AI assistant that walks them through asking for more.</p></div><div class="story-item" data-n="04"><p class="sc-kicker">What happened</p><p>Every warning now comes with a way out. Admins have real runway, and Acoustic's ops team can see every org close to its cap in one sorted table.</p></div></div>
+  </div>
+</section>
+
+<section class="sc-section">
+  <div class="sc-wrap">
+    <div class="zig">
+      <div class="zig-media"><div class="stage stage-lilac stage-pad" style="width:100%"><figure class="shot is-browser"><img src="assets/cs7-green.jpg" alt="On pace dashboard" width="1538" height="1583" loading="lazy" /></figure></div></div>
+      <div class="zig-copy"><p class="sc-kicker">Calm on purpose</p><h3 class="sc-h2">"60% used, on pace, 9 days left"</h3><p>A conclusion beats a raw count. There is also a preview of exactly what a team would see at 100%, so nobody meets that message for the first time in the moment.</p></div>
+    </div>
+    <div class="zig">
+      <div class="zig-media"><div class="stage stage-sand stage-pad" style="width:100%"><figure class="shot is-browser"><img src="assets/cs7-yellow.jpg" alt="Approaching cap dashboard" width="1440" height="1650" loading="lazy" /></figure></div></div>
+      <div class="zig-copy"><p class="sc-kicker">The 80% moment</p><h3 class="sc-h2">The banner changes, and so does the button</h3><p>A projected total gets flagged over cap, and the main action becomes Extend now instead of a passive link.</p></div>
+    </div>
+    <div style="margin-top:72px"><div class="results is-chips"><div class="result"><p class="result-num">3</p><p class="result-label">Dashboard states: on pace, approaching cap, at cap</p></div><div class="result"><p class="result-num">80%</p><p class="result-label">Usage that fires an early warning</p></div><div class="result"><p class="result-num">2</p><p class="result-label">Refill paths: one click admin action, and AI assisted request</p></div></div></div>
+  </div>
+</section>
 
   <!-- ===== NEXT PROJECT ===== -->
   <footer class="case-footer">
     <div class="container case-footer-inner">
-      <a href="case-study-ai.html" class="case-footer-nav-btn" aria-label="Previous project">
-        <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <a href="case-study-ai.html" class="case-footer-nav-btn" aria-label="Previous project"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <div class="case-footer-next">
         <p class="section-label">Next project</p>
         <p class="case-footer-next-title">Homepage revamp</p>
       </div>
-      <a href="case-study-homepage-revamp.html" class="case-footer-nav-btn" aria-label="Next project">
-        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <a href="case-study-homepage-revamp.html" class="case-footer-nav-btn" aria-label="Next project"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3 11 8l-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </footer>
 </main>
@@ -245,5 +90,6 @@
 
 <script src="script.js"></script>
 <script src="case-study.js"></script>
+<script src="showcase.js"></script>
 </body>
 </html>

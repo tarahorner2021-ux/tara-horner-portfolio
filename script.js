@@ -173,7 +173,8 @@
   const featureLoop = document.getElementById("featureLoop");
   if (featureLoop) {
     const frames = Array.from(featureLoop.querySelectorAll(".loop-frame"));
-    const FRAME_MS = 1400;
+    let loopVisible = false;
+    const FRAME_MS = 6000; // slow enough to actually read each screen
     let current = 0;
     let timer = null;
 
@@ -193,12 +194,19 @@
       timer = null;
     };
 
+    // Pause while someone is hovering or focusing the card so they can read it.
+    featureLoop.closest(".feature-card").addEventListener("mouseenter", stop);
+    featureLoop.closest(".feature-card").addEventListener("focusin", stop);
+    const resume = () => { if (loopVisible) start(); };
+    featureLoop.closest(".feature-card").addEventListener("mouseleave", resume);
+    featureLoop.closest(".feature-card").addEventListener("focusout", resume);
+
     // Only run while the card is on screen, and respect reduced-motion.
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!prefersReducedMotion && "IntersectionObserver" in window) {
       const loopObserver = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => (entry.isIntersecting ? start() : stop()));
+          entries.forEach((entry) => { loopVisible = entry.isIntersecting; loopVisible ? start() : stop(); });
         },
         { threshold: 0.35 }
       );
@@ -223,4 +231,5 @@
       window.scrollTo({ top, behavior: "smooth" });
     });
   });
+
 })();
